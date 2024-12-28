@@ -14,10 +14,12 @@ import "fmt"
 
 func main() {
     fmt.Println("Hello friend")
-    // println("debug: friend")
+    // println("debug: friend")      <1>
     // log.Println("debug: friend")
 }
 ----
+
+<1> Something
 
 == Hi there
 :tags: variable, constant, type, primitive, slice, array, map, compiler, go-build, go-install, struct, scope, var, assignment, walrus-operator, block, subroutine, procedure, func
