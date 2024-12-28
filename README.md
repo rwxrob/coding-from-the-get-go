@@ -90,14 +90,26 @@ func main() {
 - `defer`
 - save game/cache
 - goroutines
+- `go test -race`
 
 ## Bonzai branch
 
 - `Exec`
 
-## Serve
+## Bonzai completer
 
-## Fetch
+- `Testing.T`
+- `ExampleTest`
+
+## Bonzai persister
+
+## Knowledge manager
+
+## HTTP routeable server
+
+## Serve HTTP REST endpoing
+
+## Fetch JSON endpoint
 
 ## Pokeapi
 
@@ -105,9 +117,20 @@ func main() {
 
 ## Link
 
-## Walk
+## Scrap and walk HTML
+
+## `dtime` domain language
+
+- domain-specific languages
+- rooted node trees
+- abstract syntax trees
+- Walk
 
 ## Descent into parsing
+
+## Resume generator
+
+## Static site generator
 
 ## What's next...
 
