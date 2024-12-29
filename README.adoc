@@ -8,21 +8,56 @@ This is the current running notes from the livestream sessions learning practica
 
 [source,go]
 ----
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("Hello friend")
-    // println("debug: friend")      <1>
-    // log.Println("debug: friend")
-}
+include::cmd/hello/main.go[]
 ----
 
 <1> Something
 
+== Get organized
+:tags: module, package, file, go.mod, pkg, cmd, README.adoc
+
+- Package is the current directory name
+- All `.go` files in directory as as if they were all in a single file
+- Unit test files have `_test.go` (but more on that later)
+- By convention, `main.go` contains `func main()` (also `package main`)
+- All packages are either _commands_ or _libraries_
+- Put library packages into `pkg`
+- Put command packages into `cmd`
+- A _module_ contains one or more packages
+- Keep `go.mod` (which identifies the top of the _module_) at the root
+- Regularly use `go mod tidy` to remove unused module dependencies
+- Commit `go.mod` and `go.sum` in your GitHub repos
+- Make sure command packages have good names
+- Build binaries in same directory with `go build`
+- Build binary with specific name with `go build -o hello`
+- Install into `GOBIN` (in `PATH`) with `go install`
+- Use `type hello` to see what is being run
+- Use `hash -r` to reset to latest install
+- Note that `go install` required full path to file `go install ./cmd/hello`
+- Go is an _explicitly_ compiled language (like C)
+- Comment a single line with `//`
+- Comment multiple lines with `/* */`
+- Create same-named file with `_test` for unit tests
+- Add `// Output:` comment followed by expected output as `//` comment
+- Run `go test` to check example-based unit test
+
 == Hi there
-:tags: variable, constant, type, primitive, slice, array, map, compiler, go-build, go-install, struct, scope, var, assignment, walrus-operator, block, subroutine, procedure, func
+:tags: variable, constant, type, primitive, slice, array, map, struct, scope, var, assignment, walrus-operator, block, subroutine, procedure, func, null, nil, identifier, blank-identifier fmt.Sprintf
+
+- Block - anything within curly brackets
+- Subroutine - any collection of steps or instructions within a block
+- Procedure - specifically a collection of instructions in a subroutine
+- Function - internal calculation with a specific output return value (like math)
+- Scope - how visible a thing is to other things
+- Caller - the thing that called the other thing
+- Paradigm - how to look at the world
+- Operator - performs some action on one or more operands
+- Operand - receives the action of an operator
+
+== Calculator
+
+== Doc all the things
+:tags: comment, markdown, asciidoc, godoc
 
 == Terminal colors
 :tags: color, ansi, escape, terminal, tty, package, import
@@ -35,6 +70,8 @@ func main() {
 
 == What number am I thinking of?
 :tag: term.Prompt
+
+== Bridgekeeper
 
 == Arrrgs
 
