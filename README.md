@@ -2,6 +2,8 @@
 
 _Learn practical computer science and programming with Go as a first language_
 
+_In development..._
+
 This is the current running notes from the livestream sessions learning practical computer science and programming with Go as a first language. See the following web site for more:
 
 <https://rwxrob.github.io/coding>

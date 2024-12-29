@@ -1,0 +1,22 @@
+== Go get the tools
+
+- Install an editor: Vim, Neovim, VS Code, Goland, Container
+- Install Go:
+  - `brew install golang`
+  - `sudo apt get golang`, `
+  - `winget install --id golang.go`
+- Upgrade to latest Go: `go get go`
+- Install Go tools (`:GoInstallBinaries`, VS Code extension)
+- Get a GitHub account
+- Get `git` and `gh`:
+  - `brew install git gh`
+  - `sudo apt install git gh`
+  - `winget install --id git.git`, `winget install --id github.cli`
+- Authenticate to GitHub: `gh auth login`
+- Create GitHub repo:
+  - `mkdir -p ~/Repos/github.com/youraccount`
+  - `cd ~/Repos/github.com/youraccount`
+  - `gh repo create learn-golang --private --clone`
+  - `git branch -m main`
+  - `git push -u origin main`
+
