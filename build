@@ -1,0 +1,3 @@
+#!/bin/sh
+
+asciidoctor -D "docs" -o "index.html" "./docs/index.adoc"
