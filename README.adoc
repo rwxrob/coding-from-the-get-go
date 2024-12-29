@@ -73,6 +73,8 @@ include::cmd/hello/main.go[]
 
 == Bridgekeeper
 
+== FizzBuzz
+
 == Arrrgs
 
 == Binary counter
