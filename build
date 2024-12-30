@@ -1,9 +1,0 @@
-#!/usr/bin/perl
-#
-open my $fh, '<', './docs/index.adoc' or die "Could not open file: $!";
-local $/;
-my $buf = <$fh>;
-map { $tot += $_ } $buf =~ /hours="(\d+)"/g;
-
-`asciidoctor -D "docs" -a hours=$tot -o "index.html" "./docs/index.adoc"`
-

@@ -6,6 +6,8 @@
 - Push code to GitHub: `git push`
 - Check code on GitHub: `gh repo view --web`
 
+{tags}
+
 ifdef::env-github[]
 link:main.go[role=include]
 endif::[]

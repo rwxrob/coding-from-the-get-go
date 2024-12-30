@@ -1,2 +1,85 @@
-Do these _mnemonic mini-projects_ in order to learn everything the Go programming language has to offer as well as the core concepts of computer science. These challenges are designed to be memorable so that you associate concepts with whatever silly mnemonic devices were associated with the challenge. Each challenge is designed for you to research on your own and then solve and document in your own way. The idea is that _you_ are writing your own codebook repo while you work through these summarizing the key concepts and code in your own way. You'll remember everything a lot better this way and can continue to expand your own codebook as you add your own challenges and learning. If you use AsciiDoc to write it, you can even publish your own booklet for reference or create your own EPUB or PDF you can carry with you on your phone of tablet.
+== How to use this book
 
+Do these _mnemonic mini-projects_ in order to learn everything the Go programming language has to offer as well as the core concepts of computer science. Each project gradually adds new concepts and skills while repeating the stuff you have already done. This pyramid approach ensures you retain what you have learned by repetition rather than just moving on to the next thing.
+
+=== Associate name with concepts
+
+These challenges are designed to be memorable so that you associate concepts with whatever silly mnemonic devices were associated with the challenge. Each project is named for the primary artifact (usually a runnable program) that you will create by the time it is done. This short name should be used whenever talking about these projects with others to help everyone know exactly which project you are talking about.
+
+=== Start writing your own book
+
+Each challenge is designed for you to research on your own and then solve and document in your own way. The idea is that _you_ are writing your own codebook repo while you work through these summarizing the key concepts and code in your own way. You'll remember everything a lot better this way and can continue to expand your own codebook as you add your own challenges and learning.
+
+[TIP]
+====
+If you use AsciiDoc to write it, you can even publish your own booklet for reference or create your own EPUB or PDF you can carry with you on your phone of tablet.
+====
+
+=== Learn the [.line-through]#hard# right way
+
+The "hard way" is really the _only_ way to truly learn something in a sustainable way. It just means you try to do a thing and figure out how to learn to do that thing on your own. That way the next time you are required to do it you will know what to do to learn it yourself without any dependence on a book, teacher, guru, or app. This independence is _mandatory_ for any tech professional or knowledge worker today. AI just supplements this approach for those who approach learning the _right_ way. It's "hard" because you have to do your own research rather than just slurping it off the page.
+
+[CAUTION]
+====
+Run screaming from "banker style education" where the teacher thinks you should be injected with learning by sitting their listening to them instead of asking questions and interactively coming up with solutions. Paulo Friere talks about this a lot in _Pedagogy of the Oppressed_.
+====
+
+I've spent a lot of time separating the list of requirements and the associated tasks from the code and explanation of how to do it. This means you can read those first without spoiling the solution—if you want. For each project, consider following these steps:
+
+==== 1. Grok the requirements
+
+When you first open a project, read the description and the list of requirements and think hard about what you would do without ever reading the rest. If you don't understand a term, look it up with your AI assistant or the Internet. Practice doing the research just as you would on the job.
+
+[IMPORTANT]
+====
+It is _more_ important to be fast at looking things up—doing research—than it ever will be to memorize algorithms. Memorization is good to for sure, but fast research is at least as important. This is why I love moving at _Terminal Velocity_ because I can do it all from the terminal. I can find thing on the Internet in a fraction of the time that I could with a GUI browser and then open up a GUI browser if needed with one keystroke, no images, no cookies, no tracking, just lightning fast browsing and search history that is saved in my command line history as well.
+====
+
+==== 2. Imagine a solution
+
+This immediately gets your creative neurons working in your brain. You want that. Coding is _mostly_ a creative endeavor. This gets you in the habit of approach problems creatively in the real world the same way.
+
+[IMPORTANT]
+====
+It is _more_ important to learn how to approach problems and deconstruct them than it is learn to code. People hiring you want _solution providers_ not programmers. There's a big difference—especially now that AI can already program better than most programmers alive today.
+====
+
+==== 3. Write down your plan
+
+After you have really imagined how you would go about fulfilling the requirements _write you plan down_ in your own notes. Take a break and come back. Really digest your strategy and think it through. Consider it mental training because that is exactly what it is.
+
+==== 4. Commit some code
+
+Only after you have written down at least a sentence or two of what it is that you are going to do—as specifically as you like—start coding what you can from your memory and notes so far. This is important because a lot of each new project repeats stuff from previous projects on purpose to reinforce the learning.
+
+You might end up with the solution without continuing. But go ahead and proceed.
+
+Even if you don't think your code is ready to share, go ahead and commit it so that you have a backup and something to share.
+
+==== 5. Get some peer review
+
+Once your code is committed you can allow others to look at it. Don't be ashamed. Make sure you get an experienced mentor to look at it as well.
+
+[TIP]
+====
+Here is where AI really shines. You can submit your code and the challenge with the description to any AI and it will critique it for you in addition or in the absence of a more experienced mentor.
+====
+
+==== 6. Study sample solution
+
+The solution samples in this book are exactly that: samples. There might be several different ways to accomplish the requirements or perform the tasks. Each project solution is just one possibility. This is why getting peer review is so important as well. Others will bring contributions to your idea that they might never have thought of.
+
+==== 7. Revise and repeat
+
+Make changes and comments about things you need for the next time. Then commit them. Remember, these projects are designed to be repeated like martial arts so you can refresh the skills over time. In fact, now that you have committed (saved) your latest solution, why not delete everything and see if you can do it entirely from scratch without looking at your notes. Consider repeating this process until you can.
+
+==== 8. Share your learning
+
+The act of helping another learn what you just learned is the best way to assess your own learning while reinforcing it at the same time. This is why a math lab or hacker space full of others learning the same thing is always such a huge success, because people are in the room to do dynamic peer review while working on the same stuff. (Incidentally, this is the flawed justification for open cubicle workspaces.)
+
+Don't forget to write down what you learned in your notes in a way that is as if you were writing a lesson for another. You could even polish up your lesson a bit and publish it for others who might respond to your method of learning.
+
+[TIP]
+====
+Learning is dramatically different for every person. Sir Ken Robinson was knighted for his work regarding these distinct differences in learning style. Never become depressed because something was hard for you to learn while someone else learned it right away. While aptitude and intelligence are very real, so is the _method_ of learning that is hard-coded into your specific brain. Half the battle is figuring out how _you_ learn and developing learning strategies based on that.
+====

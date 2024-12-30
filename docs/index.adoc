@@ -2,10 +2,10 @@
 = Coding from the Get Go
 :author: Robert S. Muhlestein (rwxrob)
 :creator: {author}
-:copyright: 2024 Robert S. Muhlestein
+:copyright: 2024 {author}
 :email: rob@rwx.gg
 :revnumber: v0.0.1
-:revdate: 2024-11-19
+:revdate: {date}
 :revremark: Under development
 :doctype: book
 :leveloffset: +1
@@ -25,19 +25,11 @@
 
 _Learn practical computer science and programming with Go as a first language_
 
-
 [CAUTION]
 ====
 This content is under active development and based on original content from SKILSTAK Coding Arts developed in Python and JavaScript back in 2014. It will likely be several months before it is complete entirely. Many other great alternatives exist for learning computer science and Go programming if you prefer to wait. I make zero promises.
 
 You can join me for link:https://linktr.ee/rwxrob[livestream sessions] if you don't mind a bit of informal exploration as we work through these projects together.
-====
-
-[WARNING]
-====
-Anticipate about {hours} hours of "in-class" time and know that you will need another 150 on your own studying to master just these concepts and mini-projects. That's equivalent to a 5 credit hour course if crammed over 15 weeks.
-
-Remember that these mini-projects are just to introduce you to the many possibilities. You will still need at least the same amount of time on _actual_ projects after you have learned these before you will be ready to do any of this on your own professionally. Learning to code isn't easy, it's just worth it.
 ====
 
 include::copyright.adoc[]
@@ -46,6 +38,8 @@ include::copyright.adoc[]
 
 [hours="1"]
 include::./learn-by-doing.adoc[]
+
+include::./how-long.adoc[]
 
 [hours="1"]
 include::./get-the-tools.adoc[]
@@ -134,7 +128,7 @@ include::../wschatclient/README.adoc[]
 include::../calc/README.adoc[]
 
 [hours="3"]
-include::../colors/README.adoc[]
+include::../colorpicker/README.adoc[]
 
 [hours="2"]
 include::../coding/README.adoc[]

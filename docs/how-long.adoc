@@ -1,0 +1,14 @@
+== How long will it take?
+
+Anticipate about {hours_mentor} hours of time with a mentor going over the material and know that you will need another {hours_self} on your own studying to master just these concepts and mini-projects. That's {hours_total} total hours, equivalent to a 5 credit hour ({hours_week} hours per week) course if crammed over 15 weeks.
+
+Remember also that these mini-projects are just to introduce you to the many possibilities. None of these projects stand on their own as worthy of an addition to a portfolio, but they give you a great head start to make your own. You will still need at least another {hours_total} working on real projects—your own or others—after you have learned these before you will be ready to do any of this on your own professionally.
+
+Learning to code isn't easy, it's just worth it.
+
+[CAUTION]
+====
+Sometimes I get the sense that some people reading this regret that it isn't a recipe book of exact applications they would create on the job. I do love those sorts of books, but all of them are completely obsolete not that AI is here to stay. Any tech professional or knowledge worker _without_ an AI assistant at this point is practically guilty of malfeasance.
+
+No, this book _deliberately_ creates silly, memorable learning activities so that they stick better in your brain and are repeatable. Most of them can easily provide the building blocks to "serious" applications that you and/or your AI could create to show off your skills. But keep this in mind: **_employers no longer trust GitHub repos as much as before as an indication of skill_**. This was true at one point, but no more. AI has permanently destroyed that assumption.
+====

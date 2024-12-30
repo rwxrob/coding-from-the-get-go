@@ -1,3 +1,5 @@
 == fizzbuzz
 
+The fizzbuzz project is one of the most common filter challenges give to any new computer programmer being interviewed. Apparently, 95% of candidates cannot do it even after completing a computer science degree.
+
 Under development ...
