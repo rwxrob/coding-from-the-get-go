@@ -8,7 +8,7 @@
 
 [source,go]
 ----
+include::./main.go[]
 ----
 
-include::main.go[]
 
