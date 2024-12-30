@@ -6,7 +6,7 @@
 :email: rob@rwx.gg
 //:revnumber: v0.0.1
 //:revdate: 2024-11-19
-:revremark: First draft
+:revremark: Under development
 :doctype: book
 :leveloffset: +1
 //:front-cover-image: image:cover.jpeg[width=1024,height=1024]
@@ -31,22 +31,65 @@ include::copyright.adoc[]
 
 = Preface
 
-include::get-the-tools.adoc[]
+include::./get-the-tools.adoc[]
 
-= Learning challenges
+= Learn by doing
 
-== Hello friend
-:tags: module, package, main, func, print, println, fmt.Print, fmt.Println, fmt.Printf, block, parameter, argument, variable, stdout, stderr, go-run, %v, %b, string, number, boolean, type, semicolon-insertion, go-mod-init, import, double-quote, backtick-quote, single-quote
+include::./learn-by-doing.adoc[]
 
-[source,go]
-----
-include::../cmd/hello/main.go[]
-----
+include::../hello/README.adoc[]
 
-- Add code to git: `git add .`
-- Commit code to git: `git commit -m 'some comment'`
-- Push code to GitHub: `git push`
-- Check code on GitHub: `gh repo view --web`
+//include::../world/README.adoc[]
+
+//include::../bincount/README.adoc[]
+
+//include::../arrrgs/README.adoc[]
+
+//include::../greet/README.adoc[]
+
+//include::../color/README.adoc[]
+
+//include::../nyan/README.adoc[]
+
+//include::../waffles/README.adoc[]
+
+//include::../eightball/README.adoc[]
+
+//include::../roll/README.adoc[]
+
+//include::../lights/README.adoc[]
+
+//include::../pre/README.adoc[]
+
+//include::../toemoji/README.adoc[]
+
+//include::../bridge/README.adoc[]
+
+//include::../fizzbuzz/README.adoc[]
+
+//include::../simon/README.adoc[]
+
+//include::../quiz/README.adoc[]
+
+//include::../madforms/README.adoc[]
+
+//include::../vimtutor/README.adoc[]
+
+//include::../story/README.adoc[]
+
+//include::../pokeapi/README.adoc[]
+
+//include::../serve/README.adoc[]
+
+//include::../wschatserve/README.adoc[]
+
+//include::../wschatclient/README.adoc[]
+
+//include::../calc/README.adoc[]
+
+//include::../colors/README.adoc[]
+
+//include::../coding/README.adoc[]
 
 == Hi there
 :tags: variable, constant, type, primitive, slice, array, map, struct, scope, var, assignment, walrus-operator, block, subroutine, procedure, func, null, nil, identifier, blank-identifier fmt.Sprintf, function, scope, caller, paradigm, operator, operand, go-test, TDD, test-driven-development, _test.go, example-based-tests
@@ -61,7 +104,7 @@ include::../cmd/hello/main.go[]
 - Operator - performs some action on one or more operands
 - Operand - involved in the the action of an operator
 
-== Get organized
+== Organize
 :tags: module, package, file, go.mod, pkg, cmd, README.adoc, comment, markdown, asciidoc, godoc, adoc
 
 - Package is the current directory name
@@ -130,13 +173,19 @@ include::../cmd/hello/main.go[]
 == Quiz game
 :string: string, match, regular-expressions, regex
 
-== Embedded text adventure
+== Pokeapi
+
+== Text adventure
 
 - `panic`
 - `defer`
 - save game/cache
 - goroutines
 - `go test -race`
+
+== Calculator
+
+= Push a portfolio
 
 == Bonzai branch
 
@@ -153,11 +202,9 @@ include::../cmd/hello/main.go[]
 
 == HTTP routeable server
 
-== Serve HTTP REST endpoing
+== Serve HTTP REST endpoint
 
 == Fetch JSON endpoint
-
-== Pokeapi
 
 == Websocket subscribe
 
@@ -165,27 +212,14 @@ include::../cmd/hello/main.go[]
 
 == Scrap and walk HTML
 
-== `dtime` domain language
-
-- domain-specific languages
-- rooted node trees
-- abstract syntax trees
-- Walk
-
 == Descent into parsing
 
 == Resume generator
 
 == Static site generator
 
-== What's next...
+include::./whats-next.adoc[]
+= What's next
 
-- Database clients
-- Middleware
-- Tview/Tcell
-- Charmbracelet libraries
-- Cobra
-- SecureShell
-- Encryption
-- Protobuf
-- gRPC
+_In development..._
+

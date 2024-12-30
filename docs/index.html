@@ -486,7 +486,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <div class="details">
 <span id="author" class="author">Robert S. Muhlestein (rwxrob)</span><br>
 <span id="email" class="email"><a href="mailto:rob@rwx.gg">rob@rwx.gg</a></span><br>
-<br><span id="revremark">First draft</span>
+<br><span id="revremark">Under development</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -497,11 +497,11 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_go_get_the_tools">Go get the tools</a></li>
 </ul>
 </li>
-<li><a href="#_learning_challenges">Learning challenges</a>
+<li><a href="#_learn_by_doing">Learn by doing</a>
 <ul class="sectlevel2">
 <li><a href="#_hello_friend">Hello friend</a></li>
 <li><a href="#_hi_there">Hi there</a></li>
-<li><a href="#_get_organized">Get organized</a></li>
+<li><a href="#_organize">Organize</a></li>
 <li><a href="#_calculator">Calculator</a></li>
 <li><a href="#_terminal_colors">Terminal colors</a></li>
 <li><a href="#_nyan_cat">Nyan cat</a></li>
@@ -518,25 +518,29 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_simon">Simon</a></li>
 <li><a href="#_madforms">Madforms</a></li>
 <li><a href="#_quiz_game">Quiz game</a></li>
-<li><a href="#_embedded_text_adventure">Embedded text adventure</a></li>
+<li><a href="#_pokeapi">Pokeapi</a></li>
+<li><a href="#_text_adventure">Text adventure</a></li>
+<li><a href="#_calculator_2">Calculator</a></li>
+</ul>
+</li>
+<li><a href="#_push_a_portfolio">Push a portfolio</a>
+<ul class="sectlevel2">
 <li><a href="#_bonzai_branch">Bonzai branch</a></li>
 <li><a href="#_bonzai_completer">Bonzai completer</a></li>
 <li><a href="#_bonzai_persister">Bonzai persister</a></li>
 <li><a href="#_knowledge_manager">Knowledge manager</a></li>
 <li><a href="#_http_routeable_server">HTTP routeable server</a></li>
-<li><a href="#_serve_http_rest_endpoing">Serve HTTP REST endpoing</a></li>
+<li><a href="#_serve_http_rest_endpoint">Serve HTTP REST endpoint</a></li>
 <li><a href="#_fetch_json_endpoint">Fetch JSON endpoint</a></li>
-<li><a href="#_pokeapi">Pokeapi</a></li>
 <li><a href="#_websocket_subscribe">Websocket subscribe</a></li>
 <li><a href="#_link">Link</a></li>
 <li><a href="#_scrap_and_walk_html">Scrap and walk HTML</a></li>
-<li><a href="#_dtime_domain_language"><code>dtime</code> domain language</a></li>
 <li><a href="#_descent_into_parsing">Descent into parsing</a></li>
 <li><a href="#_resume_generator">Resume generator</a></li>
 <li><a href="#_static_site_generator">Static site generator</a></li>
-<li><a href="#_whats_next">What&#8217;s next&#8230;&#8203;</a></li>
 </ul>
 </li>
+<li><a href="#_whats_next">What&#8217;s next&#8230;&#8203;</a></li>
 </ul>
 </div>
 </div>
@@ -638,10 +642,29 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 </div>
 </div>
 <div class="sect1">
-<h2 id="_learning_challenges"><a class="link" href="#_learning_challenges">Learning challenges</a></h2>
+<h2 id="_learn_by_doing"><a class="link" href="#_learn_by_doing">Learn by doing</a></h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Do these <em>mnemonic mini-projects</em> in order to learn everything the Go programming language has to offer as well as the core concepts of computer science. These challenges are designed to be memorable so that you associate concepts with whatever silly mnemonic devices were associated with the challenge. Each challenge is designed for you to research on your own and then solve and document in your own way. The idea is that <em>you</em> are writing your own codebook repo while you work through these summarizing the key concepts and code in your own way. You&#8217;ll remember everything a lot better this way and can continue to expand your own codebook as you add your own challenges and learning. If you use AsciiDoc to write it, you can even publish your own booklet for reference or create your own EPUB or PDF you can carry with you on your phone of tablet.</p>
+</div>
 <div class="sect2">
 <h3 id="_hello_friend"><a class="link" href="#_hello_friend">Hello friend</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Add code to git: <code>git add .</code></p>
+</li>
+<li>
+<p>Commit code to git: <code>git commit -m 'some comment'</code></p>
+</li>
+<li>
+<p>Push code to GitHub: <code>git push</code></p>
+</li>
+<li>
+<p>Check code on GitHub: <code>gh repo view --web</code></p>
+</li>
+</ul>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="go"><span></span><span class="tok-kn">package</span><span class="tok-w"> </span><span class="tok-nx">main</span>
@@ -659,22 +682,6 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <span class="tok-w">	</span><span class="tok-nx">fmt</span><span class="tok-p">.</span><span class="tok-nx">Println</span><span class="tok-p">(</span><span class="tok-nx">greet</span><span class="tok-p">(</span><span class="tok-s">&quot;Rob&quot;</span><span class="tok-p">))</span>
 <span class="tok-p">}</span></code></pre>
 </div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Add code to git: <code>git add .</code></p>
-</li>
-<li>
-<p>Commit code to git: <code>git commit -m 'some comment'</code></p>
-</li>
-<li>
-<p>Push code to GitHub: <code>git push</code></p>
-</li>
-<li>
-<p>Check code on GitHub: <code>gh repo view --web</code></p>
-</li>
-</ul>
 </div>
 </div>
 <div class="sect2">
@@ -712,7 +719,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 </div>
 </div>
 <div class="sect2">
-<h3 id="_get_organized"><a class="link" href="#_get_organized">Get organized</a></h3>
+<h3 id="_organize"><a class="link" href="#_organize">Organize</a></h3>
 <div class="ulist">
 <ul>
 <li>
@@ -861,7 +868,11 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 
 </div>
 <div class="sect2">
-<h3 id="_embedded_text_adventure"><a class="link" href="#_embedded_text_adventure">Embedded text adventure</a></h3>
+<h3 id="_pokeapi"><a class="link" href="#_pokeapi">Pokeapi</a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="_text_adventure"><a class="link" href="#_text_adventure">Text adventure</a></h3>
 <div class="ulist">
 <ul>
 <li>
@@ -882,6 +893,15 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 </ul>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_calculator_2"><a class="link" href="#_calculator_2">Calculator</a></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_push_a_portfolio"><a class="link" href="#_push_a_portfolio">Push a portfolio</a></h2>
+<div class="sectionbody">
 <div class="sect2">
 <h3 id="_bonzai_branch"><a class="link" href="#_bonzai_branch">Bonzai branch</a></h3>
 <div class="ulist">
@@ -918,15 +938,11 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 
 </div>
 <div class="sect2">
-<h3 id="_serve_http_rest_endpoing"><a class="link" href="#_serve_http_rest_endpoing">Serve HTTP REST endpoing</a></h3>
+<h3 id="_serve_http_rest_endpoint"><a class="link" href="#_serve_http_rest_endpoint">Serve HTTP REST endpoint</a></h3>
 
 </div>
 <div class="sect2">
 <h3 id="_fetch_json_endpoint"><a class="link" href="#_fetch_json_endpoint">Fetch JSON endpoint</a></h3>
-
-</div>
-<div class="sect2">
-<h3 id="_pokeapi"><a class="link" href="#_pokeapi">Pokeapi</a></h3>
 
 </div>
 <div class="sect2">
@@ -942,25 +958,6 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 
 </div>
 <div class="sect2">
-<h3 id="_dtime_domain_language"><a class="link" href="#_dtime_domain_language"><code>dtime</code> domain language</a></h3>
-<div class="ulist">
-<ul>
-<li>
-<p>domain-specific languages</p>
-</li>
-<li>
-<p>rooted node trees</p>
-</li>
-<li>
-<p>abstract syntax trees</p>
-</li>
-<li>
-<p>Walk</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
 <h3 id="_descent_into_parsing"><a class="link" href="#_descent_into_parsing">Descent into parsing</a></h3>
 
 </div>
@@ -972,8 +969,11 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <h3 id="_static_site_generator"><a class="link" href="#_static_site_generator">Static site generator</a></h3>
 
 </div>
-<div class="sect2">
-<h3 id="_whats_next"><a class="link" href="#_whats_next">What&#8217;s next&#8230;&#8203;</a></h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_whats_next"><a class="link" href="#_whats_next">What&#8217;s next&#8230;&#8203;</a></h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
@@ -1001,17 +1001,20 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <p>Protobuf</p>
 </li>
 <li>
-<p>gRPC</p>
+<p>gRPC
+= What&#8217;s next</p>
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-12-29 16:40:34 -0500
+Last updated 2024-12-29 19:26:08 -0500
 </div>
 </div>
 </body>

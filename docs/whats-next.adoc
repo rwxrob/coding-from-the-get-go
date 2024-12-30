@@ -1,0 +1,11 @@
+= What's next...
+
+- Database clients
+- Middleware
+- Tview/Tcell
+- Charmbracelet libraries
+- Cobra
+- SecureShell
+- Encryption
+- Protobuf
+- gRPC

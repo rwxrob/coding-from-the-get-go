@@ -1,0 +1,13 @@
+== Hello friend
+:tags: module, package, main, func, print, println, fmt.Print, fmt.Println, fmt.Printf, block, parameter, argument, variable, stdout, stderr, go-run, %v, %b, string, number, boolean, type, semicolon-insertion, go-mod-init, import, double-quote, backtick-quote, single-quote
+
+- Add code to git: `git add .`
+- Commit code to git: `git commit -m 'some comment'`
+- Push code to GitHub: `git push`
+- Check code on GitHub: `gh repo view --web`
+
+[source,go]
+----
+include::main.go[]
+----
+
