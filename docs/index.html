@@ -487,7 +487,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <span id="author" class="author">Robert S. Muhlestein (rwxrob)</span><br>
 <span id="email" class="email"><a href="mailto:rob@rwx.gg">rob@rwx.gg</a></span><br>
 <span id="revnumber">version v0.0.1,</span>
-<span id="revdate">2024-12-30 14:47:53</span>
+<span id="revdate">2024-12-30 18:46:46</span>
 <br><span id="revremark">Under development</span>
 </div>
 <div id="toc" class="toc2">
@@ -496,35 +496,34 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_copyright">Copyright</a></li>
 <li><a href="#_preface">Preface</a>
 <ul class="sectlevel2">
-<li><a href="#_how_to_use_this_book">How to use this book</a>
-<ul class="sectlevel3">
-<li><a href="#_associate_name_with_concepts">Associate name with concepts</a></li>
-<li><a href="#_start_writing_your_own_book">Start writing your own book</a></li>
-<li><a href="#_learn_the_hard_right_way">Learn the <span class="line-through">hard</span> right way</a></li>
+<li><a href="#_who_should_read_this">Who should read this?</a></li>
+<li><a href="#_why_the_go_language">Why the Go language?</a></li>
+<li><a href="#prerequisites">What do I need?</a></li>
+<li><a href="#_how_long_will_it_take">How long will it take?</a></li>
+<li><a href="#_how_do_i_use_this_book">How do I use this book?</a></li>
+<li><a href="#_dear_parents_and_pedagogues">Dear parents and pedagogues</a></li>
 </ul>
 </li>
-<li><a href="#_how_long_will_it_take">How long will it take?</a></li>
-<li><a href="#_get_go">Get Go</a>
-<ul class="sectlevel3">
-<li><a href="#_install_a_go_development_environment">Install a Go development environment</a></li>
+<li><a href="#_prepare_to_code">Prepare to code</a>
+<ul class="sectlevel2">
+<li><a href="#_install_a_go_editor">Install a Go editor</a></li>
+<li><a href="#_consider_a_container">Consider a container</a></li>
 <li><a href="#_install_the_go_compiler">Install the Go compiler</a></li>
 <li><a href="#_upgrade_to_latest_go_version">Upgrade to latest Go version</a></li>
-<li><a href="#_install_go_binary_tools_for_chosen_development_environment">Install Go binary tools for chosen development environment</a></li>
+<li><a href="#_install_go_binary_tools">Install Go binary tools</a></li>
 <li><a href="#_create_a_github_account">Create a GitHub account</a></li>
 <li><a href="#_install_git_and_gh">Install git and gh</a></li>
-<li><a href="#_authenticate_to_github_from_the_command_line">Authenticate to GitHub from the command line</a></li>
+<li><a href="#_authenticate_to_github_from_cli">Authenticate to GitHub from CLI</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#_projects">Projects</a>
+<li><a href="#_projects_youll_remember">Projects you&#8217;ll remember</a>
 <ul class="sectlevel2">
 <li><a href="#_hello">hello</a></li>
 <li><a href="#_world">world</a></li>
 <li><a href="#_bincount">bincount</a></li>
 <li><a href="#_arrrgs">arrrgs</a></li>
 <li><a href="#_greet">greet</a></li>
-<li><a href="#_color">color</a></li>
+<li><a href="#_ansi">ansi</a></li>
 <li><a href="#_nyan">nyan</a></li>
 <li><a href="#_waffles">waffles</a></li>
 <li><a href="#_eightball">eightball</a></li>
@@ -546,7 +545,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_wschatserve">wschatserve</a></li>
 <li><a href="#_wschatclient">wschatclient</a></li>
 <li><a href="#_calc">calc</a></li>
-<li><a href="#_colorpicker">colorpicker</a></li>
+<li><a href="#_cpick">cpick</a></li>
 <li><a href="#_coding">coding</a></li>
 <li><a href="#_resume">resume</a></li>
 <li><a href="#_xstatic">xstatic</a></li>
@@ -556,6 +555,16 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_mymark">mymark</a></li>
 </ul>
 </li>
+<li><a href="#_planning_whats_next">Planning what&#8217;s next</a>
+<ul class="sectlevel2">
+<li><a href="#_get_a_job">Get a job</a></li>
+<li><a href="#_join_a_project">Join a project</a></li>
+<li><a href="#_find_a_meetup">Find a meetup</a></li>
+<li><a href="#_change_your_stars">Change your stars</a></li>
+<li><a href="#_save_the_world">Save the world</a></li>
+</ul>
+</li>
+<li><a href="#_references">References</a></li>
 </ul>
 </div>
 </div>
@@ -576,7 +585,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <p>This content is under active development and based on original content from SKILSTAK Coding Arts developed in Python and JavaScript back in 2014. It will likely be several months before it is complete entirely. Many other great alternatives exist for learning computer science and Go programming if you prefer to wait. I make zero promises.</p>
 </div>
 <div class="paragraph">
-<p>You can join me for <a href="https://linktr.ee/rwxrob">livestream sessions</a> if you don&#8217;t mind a bit of informal exploration as we work through these projects together.</p>
+<p>You can join me for <a href="#ref-contact">livestream sessions</a> if you don&#8217;t mind a bit of informal exploration as we work through these projects together.</p>
 </div>
 </td>
 </tr>
@@ -605,9 +614,136 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <h2 id="_preface"><a class="link" href="#_preface">Preface</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_how_to_use_this_book"><a class="link" href="#_how_to_use_this_book">How to use this book</a></h3>
+<h3 id="_who_should_read_this"><a class="link" href="#_who_should_read_this">Who should read this?</a></h3>
 <div class="paragraph">
-<p>Do these <em>mnemonic mini-projects</em> in order to learn everything the Go programming language has to offer as well as the core concepts of computer science. Each project gradually adds new concepts and skills while repeating the stuff you have already done. This pyramid approach ensures you retain what you have learned by repetition rather than just moving on to the next thing.</p>
+<p>This book is for anyone who wants to <strong>learn to code and learn enough computer science as is practical</strong>. I assume you have never coded anything and might not know what the term <em>coding</em> even means. That&#8217;s okay. This is where we begin. If you are looking for more, you&#8217;re in the wrong place. <a href="#ref-awesome-go">Plenty of other resources</a> exist for people who already know how do code and just want to learn Go programming.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>There are presently zero books or resources for absolute beginners who have never coded before that <em>begin</em> with the Go programming language. That&#8217;s the reason I created this one. I find this interesting since Go is a far better language with which to demonstrate <em>modern</em> software development practices than traditional Java as is used in the US AP Computer Science program. Just Go&#8217;s handling of implied <em>interfaces</em> alone is reason enough. Go contains all that is good from object-oriented programming without all that is <a href="#ref-real-oop">bad from class-oriented programming</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_why_the_go_language"><a class="link" href="#_why_the_go_language">Why the Go language?</a></h3>
+<div class="paragraph">
+<p>The language we learn is <strong>Go</strong>. My artist wife is obsessed with traditional fables, which might explain why I like to call Go the <em>Goldilocks</em> of modern languages. (Yes, I know, it&#8217;s pretty cheesy—but you&#8217;ll remember it, right?) Go was explicitly designed and developed to do real work, originally at Google and now for the world of "cloud-native" computing upon which all enterprise depends.</p>
+</div>
+<div class="paragraph">
+<p>The Goldilocks comparison comes from the fact that Go is low-level and "serious" enough to withstand the weight of huge enterprise software development codebases, while remaining light and agile enough to feel like a softly typed, "approachable" language such as Python. Go fills this space between them perfectly, which is probably why it is the fastest-growing language among Systems Development Engineers modernizing monstrous codebases of technical debt from other, less agile, and more error-prone languages.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="prerequisites"><a class="link" href="#prerequisites">What do I need?</a></h3>
+<div class="paragraph">
+<p>You really don&#8217;t need a lot to get going with this book. It&#8217;s designed to have the least amount of setup and dependency:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A decent computer that can run reasonable performant games</p>
+</li>
+<li>
+<p>A reliable Internet connection for installing and saving</p>
+</li>
+<li>
+<p>An email account that you control</p>
+</li>
+<li>
+<p>The ability to type 30 words per minute from home row</p>
+</li>
+<li>
+<p>Administrator permission to allow the installation of software</p>
+</li>
+<li>
+<p>Enough snacks and drinks to keep you from getting hangry</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Take your coding to the next level by first reading <a href="#ref-terminal-velocity"><em>Terminal Velocity</em></a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<h4 id="_strongly_consider_an_ai_assistant" class="discrete">Strongly consider an AI assistant</h4>
+<div class="paragraph">
+<p>In my experience ChatGPT is an absolute necessity for anyone wanting to truly take their learning to the next level. I&#8217;m not getting paid to say that (but I would happily accept money for saying so). You really should consider subscribing if you are serious about adopting an autodidactic lifestyle. ChatGPT is specifically designed for general learning and creativity and runs on anything with full contextual history. Mine has helped me keep my conversational Russian and French skills up, planned bike trips, helped me code the mundane stuff, reminded me of things I forgot about, offered up random ideas, and so much more.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Claude, another AI assistant, is better for <code>mods</code> terminal API integration and for coding.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Still skeptical? I know I was.</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s the thing. On demand learning exponentially increases when an AI is involved. Nothing breaks through frustration and loneliness better when taking on learning challenges with a supportive AI companion—even when a helpful human mentor is also available.</p>
+</div>
+<div class="paragraph">
+<p>We are quickly approaching a time when the digital divide will no longer be just between those who have computers and Internet access and those who do not, but between those who have learned to leverage a personal AI assistant loaded with contextual history and those who have not. Don&#8217;t get left behind.</p>
+</div>
+<div class="paragraph">
+<p>We are already seeing this difference around us every day. I&#8217;m remarkably faster at the same job now with AI doing the same thing I&#8217;ve been doing for four years, and that&#8217;s not even just the coding part. Querying an AI is exponentially better for research than a Google search, provided I verify the results, as always.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_how_long_will_it_take"><a class="link" href="#_how_long_will_it_take">How long will it take?</a></h3>
+<div class="paragraph">
+<p>Anticipate about 72 hours of time with a mentor going over the material and know that you will need another 144 on your own studying to master just these concepts and mini-projects. That&#8217;s 216 total hours (give or take) equivalent to a 5 <a href="#ref-credit-hours">credit hour</a> (14.4 hours per week) course if crammed over 15 weeks.</p>
+</div>
+<div class="paragraph">
+<p>Remember also that these mini-projects are just to introduce you to the many possibilities. None of these projects stand on their own as worthy of an addition to a portfolio, but they give you a great head start to make your own. You will still need at least another 216 working on real projects—your own or others—after you have learned these before you will be ready to do any of this on your own professionally.</p>
+</div>
+<div class="paragraph">
+<p>Learning to code isn&#8217;t easy, it&#8217;s just worth it.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_how_do_i_use_this_book"><a class="link" href="#_how_do_i_use_this_book">How do I use this book?</a></h3>
+<div class="paragraph">
+<p>Join a learning community and/or find a mentor, then do these <em>mnemonic mini-projects</em> in order to learn everything the Go programming language has to offer as well as the core concepts of computer science. Each project gradually adds new concepts and skills while repeating the stuff you have already done. This scaffold learning approach ensures you retain what you have learned by repetition rather than just moving on to the next thing.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You really should not attempt to learn all of this on your own without support from someone who has already mastered these specific concepts and skills. It doesn&#8217;t have to be a "teacher" per se. Anyone who has successfully completed them can serve as a mentor. This means you may find such people in a learning community focused on the same things. You are always welcome to join <a href="#ref-contact">mine</a> if you cannot find another.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="sect3">
 <h4 id="_associate_name_with_concepts"><a class="link" href="#_associate_name_with_concepts">Associate name with concepts</a></h4>
@@ -638,7 +774,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <div class="sect3">
 <h4 id="_learn_the_hard_right_way"><a class="link" href="#_learn_the_hard_right_way">Learn the <span class="line-through">hard</span> right way</a></h4>
 <div class="paragraph">
-<p>The "hard way" is really the <em>only</em> way to truly learn something in a sustainable way. It just means you try to do a thing and figure out how to learn to do that thing on your own. That way the next time you are required to do it you will know what to do to learn it yourself without any dependence on a book, teacher, guru, or app. This independence is <em>mandatory</em> for any tech professional or knowledge worker today. AI just supplements this approach for those who approach learning the <em>right</em> way. It&#8217;s "hard" because you have to do your own research rather than just slurping it off the page.</p>
+<p>The "hard way" is really the <em>only</em> way to truly learn something in a sustainable way. It just means you try to do a thing and figure out how to learn to do that thing on your own before depending on someone who knows. The scaffold approach means you have someone there to spot you and support you if you really screw up so you don&#8217;t break your neck but by doing what you can on your own first—knowing your limitations without fearing them—leads you to greater confidence in your own ability to learn and assess your own learning without help. You grow to have no dependence on a book, teacher, guru, or app. Developing this autodidactic, just-in-time learning independence is <em>mandatory</em> for any tech professional or knowledge worker today. AI just supplements this approach for those who approach learning the <em>right</em> way. It&#8217;s "hard" because you have to do your own research rather than just slurping it off the page.</p>
 </div>
 <div class="admonitionblock caution">
 <table>
@@ -648,7 +784,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Run screaming from "banker style education" where the teacher thinks you should be injected with learning by sitting their listening to them instead of asking questions and interactively coming up with solutions. Paulo Friere talks about this a lot in <em>Pedagogy of the Oppressed</em>.</p>
+<p>Run screaming from "banker style education" where the teacher thinks you should be injected with learning by sitting there listening to them instead of asking questions and interactively coming up with solutions. This concept aligns with Freire&#8217;s critique of traditional education models, often referred to as the "banking" model of education. (Freire, <em>Pedagogy of the Oppressed</em>, p. 71).</p>
 </div>
 </td>
 </tr>
@@ -662,6 +798,20 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <div class="paragraph">
 <p>When you first open a project, read the description and the list of requirements and think hard about what you would do without ever reading the rest. If you don&#8217;t understand a term, look it up with your AI assistant or the Internet. Practice doing the research just as you would on the job.</p>
 </div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Copy and paste the requirements as-is into your own notes so you can check them off as you complete them. Just add an <code>x</code> between the square brackets. This is supported in both AsciiDoc and GitHub flavored Markdown and is a good habit to get into because these are regularly used in pull requests and other developer operations.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -670,7 +820,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 </td>
 <td class="content">
 <div class="paragraph">
-<p>It is <em>more</em> important to be fast at looking things up—doing research—than it ever will be to memorize algorithms. Memorization is good to for sure, but fast research is at least as important. This is why I love moving at <em>Terminal Velocity</em> because I can do it all from the terminal. I can find thing on the Internet in a fraction of the time that I could with a GUI browser and then open up a GUI browser if needed with one keystroke, no images, no cookies, no tracking, just lightning fast browsing and search history that is saved in my command line history as well.</p>
+<p>It is <em>more</em> important to be fast at looking things up—doing research—than it ever will be to memorize algorithms. Memorization is good to for sure, but fast research is at least as important. This is why I love moving at <a href="#ref-terminal-velocity"><em>Terminal Velocity</em></a> because I can do it all from the terminal. I can find thing on the Internet in a fraction of the time that I could with a GUI browser and then open up a GUI browser if needed with one keystroke, no images, no cookies, no tracking, just lightning fast browsing and search history that is saved in my command line history as well.</p>
 </div>
 </td>
 </tr>
@@ -762,8 +912,15 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
+<div class="quoteblock">
+<blockquote>
 <div class="paragraph">
-<p>Learning is dramatically different for every person. Sir Ken Robinson was knighted for his work regarding these distinct differences in learning style. Never become depressed because something was hard for you to learn while someone else learned it right away. While aptitude and intelligence are very real, so is the <em>method</em> of learning that is hard-coded into your specific brain. Half the battle is figuring out how <em>you</em> learn and developing learning strategies based on that.</p>
+<p>The problem with <em>conformity</em> in education is that people are not standardized to begin with. (Robinson, <em>Creative Schools</em>)</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>Learning is dramatically different for every person. Sir Ken Robinson regularly shared these distinct differences in learning style. Never become depressed because something was hard for you to learn while someone else learned it right away. While aptitude and intelligence are very real, so is the <em>method</em> of learning that is hard-coded into your specific brain. Half the battle is figuring out how <em>you</em> learn and developing learning strategies based on that.</p>
 </div>
 </td>
 </tr>
@@ -773,41 +930,55 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 </div>
 </div>
 <div class="sect2">
-<h3 id="_how_long_will_it_take"><a class="link" href="#_how_long_will_it_take">How long will it take?</a></h3>
+<h3 id="_dear_parents_and_pedagogues"><a class="link" href="#_dear_parents_and_pedagogues">Dear parents and pedagogues</a></h3>
 <div class="paragraph">
-<p>Anticipate about 70 hours of time with a mentor going over the material and know that you will need another 140 on your own studying to master just these concepts and mini-projects. That&#8217;s 210 total hours, equivalent to a 5 credit hour (14 hours per week) course if crammed over 15 weeks.</p>
-</div>
-<div class="paragraph">
-<p>Remember also that these mini-projects are just to introduce you to the many possibilities. None of these projects stand on their own as worthy of an addition to a portfolio, but they give you a great head start to make your own. You will still need at least another 210 working on real projects—your own or others—after you have learned these before you will be ready to do any of this on your own professionally.</p>
+<p>Are you a parent or a teacher? If so, thank you for being <em>awesome</em>! It takes a lot to bring kids into this world and even more to dedicate your life to helping kids that aren&#8217;t even your own to find their way and learn something even if they don&#8217;t want to. Deep respect. But let&#8217;s get real. You&#8217;re reading this right now wondering if I&#8217;m going to corrupt your children.</p>
 </div>
 <div class="paragraph">
-<p>Learning to code isn&#8217;t easy, it&#8217;s just worth it.</p>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Sometimes I get the sense that some people reading this regret that it isn&#8217;t a recipe book of exact applications they would create on the job. I do love those sorts of books, but all of them are completely obsolete not that AI is here to stay. Any tech professional or knowledge worker <em>without</em> an AI assistant at this point is practically guilty of malfeasance.</p>
+<p>The answer is yes. Yes I am. In fact, my goal is to fully corrupt them much the same as Socrates. If I am successful your children will become <em>better</em> that the status quo, they&#8217;ll think critically, ask uncomfortable questions, and use their new powers and tools to ethically disrupt this broken world transforming it into something better. They&#8217;ll become the most annoying people you&#8217;ve ever known—in the best way possible.</p>
 </div>
 <div class="paragraph">
-<p>No, this book <em>deliberately</em> creates silly, memorable learning activities so that they stick better in your brain and are repeatable. Most of them can easily provide the building blocks to "serious" applications that you and/or your AI could create to show off your skills. But keep this in mind: <strong><em>employers no longer trust GitHub repos as much as before as an indication of skill</em></strong>. This was true at one point, but no more. AI has permanently destroyed that assumption.</p>
+<p>Why me? Because getting people to discover this potential and realize it through their own learning is my super power. I&#8217;ve been mentored by the best and I&#8217;m <em>really</em> good at it. Since the first time my scouts begged "Mr. Rob, teach us to code. Mr. Rob, teach us to hack. Mr. Rob, teach us Russian." I have been bound and determined to make this a reality. In fact, I started SKILSTAK Coding Arts in 2013 with my own retirement money to address the <em>real</em> needs of the tech industry and those who might consider it as a career, raising a generation of highly skilled knowledge warriors.</p>
 </div>
-</td>
-</tr>
-</table>
+<div class="paragraph">
+<p>Let me tell you about some of these amazing people:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>One of them quit his grocery clerk job to write code for a solar energy company and was paired with essentially his own intern at 16.</p>
+</li>
+<li>
+<p>Another couldn&#8217;t get a job with a psychology degree so he learned this stuff and got a starting salary over $100,000.</p>
+</li>
+<li>
+<p>A few people got coveted invitations to special FBI cybersecurity camps.</p>
+</li>
+<li>
+<p>One drove 40 minutes both ways just to attend our sessions for <em>four years</em> and went on to create an entire coding club at her rural school.</p>
+</li>
+<li>
+<p>Some got cybersecurity degrees from accredited colleges and invites to work with professional hacking crews.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>It&#8217;s been a blast being with these people. My favorite memories are all the times we hacked companies with permission and helped them patch their security, or shut down hackers for panicked parents whose businesses had been compromised.</p>
+</div>
+<div class="paragraph">
+<p>The point is, these success stories don&#8217;t have to be about someone else. They can be about someone <em>you know and love</em>. Terminal tech skills really do change lives and I&#8217;m here to help in whatever way I can.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_get_go"><a class="link" href="#_get_go">Get Go</a></h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prepare_to_code"><a class="link" href="#_prepare_to_code">Prepare to code</a></h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>I&#8217;ve noticed that coding in Go is something that people with all backgrounds enjoy. This is probably because Go can be compiled on anything for anything else there is zero limitation as to the computer you use for development. I regularly use Go programs I&#8217;ve written on macOS or Linux on my Windows machine as well.</p>
 </div>
-<div class="sect3">
-<h4 id="_install_a_go_development_environment"><a class="link" href="#_install_a_go_development_environment">Install a Go development environment</a></h4>
+<div class="sect2">
+<h3 id="_install_a_go_editor"><a class="link" href="#_install_a_go_editor">Install a Go editor</a></h3>
 <div class="paragraph">
 <p>The editor you use really doesn&#8217;t matter—for now. Some prefer a graphic user interface and others a terminal. They are all fine. The original Go development team used Vim for everything and that is my personal preference.</p>
 </div>
@@ -836,35 +1007,35 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 </li>
 </ul>
 </div>
-<div class="sect4">
-<h5 id="_consider_a_container"><a class="link" href="#_consider_a_container">Consider a container</a></h5>
+</div>
+<div class="sect2">
+<h3 id="_consider_a_container"><a class="link" href="#_consider_a_container">Consider a container</a></h3>
 <div class="paragraph">
 <p>If you know about containers this might be the fastest way to get going—especially if you use the official Go container image.</p>
 </div>
 </div>
-</div>
-<div class="sect3">
-<h4 id="_install_the_go_compiler"><a class="link" href="#_install_the_go_compiler">Install the Go compiler</a></h4>
+<div class="sect2">
+<h3 id="_install_the_go_compiler"><a class="link" href="#_install_the_go_compiler">Install the Go compiler</a></h3>
 <div class="paragraph">
 <p>Mac: <code>brew install golang</code><br>
 Linux: <code>sudo apt get golang</code><br>
 Windows: <code>winget install --id golang.go</code></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_upgrade_to_latest_go_version"><a class="link" href="#_upgrade_to_latest_go_version">Upgrade to latest Go version</a></h4>
+<div class="sect2">
+<h3 id="_upgrade_to_latest_go_version"><a class="link" href="#_upgrade_to_latest_go_version">Upgrade to latest Go version</a></h3>
 <div class="paragraph">
 <p><code>go get go</code></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_install_go_binary_tools_for_chosen_development_environment"><a class="link" href="#_install_go_binary_tools_for_chosen_development_environment">Install Go binary tools for chosen development environment</a></h4>
+<div class="sect2">
+<h3 id="_install_go_binary_tools"><a class="link" href="#_install_go_binary_tools">Install Go binary tools</a></h3>
 <div class="paragraph">
 <p><code>:GoInstallBinaries</code>, VS Code extension</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_create_a_github_account"><a class="link" href="#_create_a_github_account">Create a GitHub account</a></h4>
+<div class="sect2">
+<h3 id="_create_a_github_account"><a class="link" href="#_create_a_github_account">Create a GitHub account</a></h3>
 <div class="admonitionblock caution">
 <table>
 <tr>
@@ -880,8 +1051,8 @@ Windows: <code>winget install --id golang.go</code></p>
 </table>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_install_git_and_gh"><a class="link" href="#_install_git_and_gh">Install git and gh</a></h4>
+<div class="sect2">
+<h3 id="_install_git_and_gh"><a class="link" href="#_install_git_and_gh">Install git and gh</a></h3>
 <div class="ulist">
 <ul>
 <li>
@@ -896,8 +1067,8 @@ Windows: <code>winget install --id golang.go</code></p>
 </ul>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_authenticate_to_github_from_the_command_line"><a class="link" href="#_authenticate_to_github_from_the_command_line">Authenticate to GitHub from the command line</a></h4>
+<div class="sect2">
+<h3 id="_authenticate_to_github_from_cli"><a class="link" href="#_authenticate_to_github_from_cli">Authenticate to GitHub from CLI</a></h3>
 <div class="paragraph">
 <p><code>gh auth login</code></p>
 </div>
@@ -916,10 +1087,15 @@ git<span class="tok-w"> </span>push<span class="tok-w"> </span>-u<span class="to
 </div>
 </div>
 </div>
-</div>
 <div class="sect1">
-<h2 id="_projects"><a class="link" href="#_projects">Projects</a></h2>
+<h2 id="_projects_youll_remember"><a class="link" href="#_projects_youll_remember">Projects you&#8217;ll remember</a></h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Sometimes I get the sense that some people reading this part of the book regret that it isn&#8217;t a recipe book of exact applications they would create on the job. I do love those sorts of books, but all of them are completely obsolete now that AI is here to stay. Any tech professional or knowledge worker <em>without</em> an AI assistant at this point is practically guilty of malfeasance.</p>
+</div>
+<div class="paragraph">
+<p>No, this book <em>deliberately</em> creates silly, memorable learning activities so that they stick better in your brain and are repeatable. Most of them can easily provide the building blocks to "serious" applications that you and/or your AI could create to show off your skills. But keep this in mind: <strong><em>employers no longer trust GitHub repos as much as before as an indication of skill</em></strong>. This was true at one point, but no more. AI has permanently destroyed that assumption.</p>
+</div>
 <div class="sect2">
 <h3 id="_hello"><a class="link" href="#_hello">hello</a></h3>
 <div class="ulist">
@@ -1098,9 +1274,36 @@ git<span class="tok-w"> </span>push<span class="tok-w"> </span>-u<span class="to
 </div>
 </div>
 <div class="sect2">
-<h3 id="_color"><a class="link" href="#_color">color</a></h3>
+<h3 id="_ansi"><a class="link" href="#_ansi">ansi</a></h3>
 <div class="paragraph">
 <p>Under development &#8230;&#8203;</p>
+</div>
+<h4 id="_requirements" class="discrete">Requirements</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="adoc"><span></span>- [ ] Create high-level function library: `ansi`
+- [ ] Create callable command: `ansi`
+- [ ] If one argument beginning with zero assume 256
+- [ ] If one argument matching CSS regex assume CSS
+- [ ] If three arguments assume RGB
+- [ ] If one argument `reset` or `x` print reset
+- [ ] Must not take any dashed options</code></pre>
+</div>
+</div>
+<h4 id="_bonus" class="discrete">Bonus</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="adoc"><span></span>- [ ] Implement as Bonzai branch
+- [ ] Add named CSS colors
+- [ ] Add named CSS color completer
+- [ ] Submit CSS color completer to Bonzai project
+- [ ] Submit CSS color library to Bonzai project
+- [ ] Add custom completer that uses CSS completer</code></pre>
+</div>
+</div>
+<h4 id="_sample" class="discrete">Sample</h4>
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
 </div>
 </div>
 <div class="sect2">
@@ -1233,7 +1436,10 @@ git<span class="tok-w"> </span>push<span class="tok-w"> </span>-u<span class="to
 </div>
 </div>
 <div class="sect2">
-<h3 id="_colorpicker"><a class="link" href="#_colorpicker">colorpicker</a></h3>
+<h3 id="_cpick"><a class="link" href="#_cpick">cpick</a></h3>
+<div class="paragraph">
+<p>Real-time, dynamic color selection from command line (based on the original project from <a href="https://github.com/ethanbaker/cpick">Ethan Baker</a>).</p>
+</div>
 <div class="paragraph">
 <p>Under development &#8230;&#8203;</p>
 </div>
@@ -1282,11 +1488,85 @@ git<span class="tok-w"> </span>push<span class="tok-w"> </span>-u<span class="to
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_planning_whats_next"><a class="link" href="#_planning_whats_next">Planning what&#8217;s next</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Hard to believe you made it through all those projects. Congratulations! The few who do inevitably go through a cathartic emotional period right about now. I have had a front-row seat for hundreds going through this experience. It&#8217;s almost like completing your first marathon. But its what happens next that really matters most. What are you going to <em>do</em> with your new skills?</p>
+</div>
+<div class="sect2">
+<h3 id="_get_a_job"><a class="link" href="#_get_a_job">Get a job</a></h3>
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_join_a_project"><a class="link" href="#_join_a_project">Join a project</a></h3>
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_find_a_meetup"><a class="link" href="#_find_a_meetup">Find a meetup</a></h3>
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_change_your_stars"><a class="link" href="#_change_your_stars">Change your stars</a></h3>
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_save_the_world"><a class="link" href="#_save_the_world">Save the world</a></h3>
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references"><a class="link" href="#_references">References</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a id="ref-real-oop"></a>Coplien, James. <em>The Dehumanisation of Agile and Objects.</em> Presented at GOTO Berlin 2017. YouTube video, 1:00:25. Published November 2017. <a href="https://youtu.be/ZrBQmIDdls4">https://youtu.be/ZrBQmIDdls4</a></p>
+</li>
+<li>
+<p>Freire, Paulo. <em>Pedagogy of the Oppressed</em>. Translated by Myra Bergman Ramos. 30th Anniversary Edition. Continuum, 2000.</p>
+</li>
+<li>
+<p><a id="ref-awesome-go"></a>Muhlestein, Rob. <em>Awesome Go</em>. GitHub repository. <a href="https://github.com/rwxrob/awesome-go">https://github.com/rwxrob/awesome-go</a></p>
+</li>
+<li>
+<p><a id="ref-contact"></a>Muhlestein, Rob. <em>rwxrob</em>. Linktree. Accessed July 2024. <a href="https://linktr.ee/rwxrob">https://linktr.ee/rwxrob</a>.</p>
+</li>
+<li>
+<p><a id="ref-terminal-velocity"></a>Muhlestein, Rob. <em>Terminal Velocity</em>. GitHub repository. Accessed July 2024. <a href="https://github.com/rwxrob/terminal-velocity">https://github.com/rwxrob/terminal-velocity</a>.</p>
+</li>
+<li>
+<p>Robinson, Ken, and Lou Aronica. <em>Creative Schools: The Grassroots Revolution That&#8217;s Transforming Education</em>. Penguin Books, 2016.</p>
+</li>
+<li>
+<p>Robinson, Ken. <em>Out of Our Minds: Learning to Be Creative</em>. 3rd ed., Capstone, 2017.</p>
+</li>
+<li>
+<p><a id="ref-yt-ken-ted"></a>Robinson, Ken. <em>Do Schools Kill Creativity?</em> Filmed at TED February 2006, posted June 2006. YouTube video, 20:03. <a href="https://youtu.be/iG9CE55wbtY">https://youtu.be/iG9CE55wbtY</a></p>
+</li>
+<li>
+<p><a id="ref-credit-hours"></a>Silva, Elena, Taylor White, and Thomas Toch. <em>The Carnegie Unit: A Century-Old Standard in a Changing Education Landscape</em>. Carnegie Foundation for the Advancement of Teaching, 2015. <a href="https://www.carnegiefoundation.org/wp-content/uploads/2015/01/Carnegie_Unit_Report.pdf">https://www.carnegiefoundation.org/wp-content/uploads/2015/01/Carnegie_Unit_Report.pdf</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version v0.0.1<br>
-Last updated 2024-12-30 13:16:01 -0500
+Last updated 2024-12-30 18:46:44 -0500
 </div>
 </div>
 </body>

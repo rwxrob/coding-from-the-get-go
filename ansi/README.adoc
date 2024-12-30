@@ -1,0 +1,35 @@
+== ansi
+
+Under development ...
+
+[discrete]
+=== Requirements
+
+[source, adoc]
+----
+- [ ] Create high-level function library: `ansi`
+- [ ] Create callable command: `ansi`
+- [ ] If one argument beginning with zero assume 256
+- [ ] If one argument matching CSS regex assume CSS
+- [ ] If three arguments assume RGB
+- [ ] If one argument `reset` or `x` print reset
+- [ ] Must not take any dashed options
+----
+
+[discrete]
+=== Bonus
+
+[source, adoc]
+----
+- [ ] Implement as Bonzai branch
+- [ ] Add named CSS colors
+- [ ] Add named CSS color completer
+- [ ] Submit CSS color completer to Bonzai project
+- [ ] Submit CSS color library to Bonzai project
+- [ ] Add custom completer that uses CSS completer
+----
+
+[discrete]
+=== Sample
+
+_In development..._

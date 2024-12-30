@@ -13,7 +13,7 @@
 :sectnums!:
 :sectlinks:
 :toc: left
-:toclevels: 3
+:toclevels: 2
 :toc-title: Table of Contents
 :description: Learn practical computer science and programming with Go as a first language.
 :keywords: golang computer-science compsci programming beginners
@@ -29,22 +29,34 @@ _Learn practical computer science and programming with Go as a first language_
 ====
 This content is under active development and based on original content from SKILSTAK Coding Arts developed in Python and JavaScript back in 2014. It will likely be several months before it is complete entirely. Many other great alternatives exist for learning computer science and Go programming if you prefer to wait. I make zero promises.
 
-You can join me for link:https://linktr.ee/rwxrob[livestream sessions] if you don't mind a bit of informal exploration as we work through these projects together.
+You can join me for <<ref-contact, livestream sessions>> if you don't mind a bit of informal exploration as we work through these projects together.
 ====
 
 include::copyright.adoc[]
 
 = Preface
 
-[hours="1"]
-include::./learn-by-doing.adoc[]
+include::./who-should-read-this.adoc[]
+
+include::./prerequisites.adoc[]
 
 include::./how-long.adoc[]
 
 [hours="1"]
+include::./learn-by-doing.adoc[]
+
+include::./parents-and-pedagogues.adoc[]
+
+= Prepare to code
+
+[hours="1"]
 include::./get-the-tools.adoc[]
 
-= Projects
+= Projects you'll remember
+
+Sometimes I get the sense that some people reading this part of the book regret that it isn't a recipe book of exact applications they would create on the job. I do love those sorts of books, but all of them are completely obsolete now that AI is here to stay. Any tech professional or knowledge worker _without_ an AI assistant at this point is practically guilty of malfeasance.
+
+No, this book _deliberately_ creates silly, memorable learning activities so that they stick better in your brain and are repeatable. Most of them can easily provide the building blocks to "serious" applications that you and/or your AI could create to show off your skills. But keep this in mind: **_employers no longer trust GitHub repos as much as before as an indication of skill_**. This was true at one point, but no more. AI has permanently destroyed that assumption.
 
 [hours="1"]
 include::../hello/README.adoc[]
@@ -62,7 +74,7 @@ include::../arrrgs/README.adoc[]
 include::../greet/README.adoc[]
 
 [hours="1"]
-include::../color/README.adoc[]
+include::../ansi/README.adoc[]
 
 [hours="1"]
 include::../nyan/README.adoc[]
@@ -127,8 +139,8 @@ include::../wschatclient/README.adoc[]
 [hours="4"]
 include::../calc/README.adoc[]
 
-[hours="3"]
-include::../colorpicker/README.adoc[]
+[hours="4"]
+include::../cpick/README.adoc[]
 
 [hours="2"]
 include::../coding/README.adoc[]
@@ -151,3 +163,11 @@ include::../kn/README.adoc[]
 [hours="8"]
 include::../mymark/README.adoc[]
 
+= Planning what's next
+
+[hours="1"]
+include::./planning.adoc[]
+
+= References
+
+include::./references.adoc[]

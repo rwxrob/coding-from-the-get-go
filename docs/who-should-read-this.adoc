@@ -1,0 +1,14 @@
+== Who should read this?
+
+This book is for anyone who wants to *learn to code and learn enough computer science as is practical*. I assume you have never coded anything and might not know what the term _coding_ even means. That's okay. This is where we begin. If you are looking for more, you're in the wrong place. <<ref-awesome-go, Plenty of other resources>> exist for people who already know how do code and just want to learn Go programming.
+
+[CAUTION]
+====
+There are presently zero books or resources for absolute beginners who have never coded before that _begin_ with the Go programming language. That's the reason I created this one. I find this interesting since Go is a far better language with which to demonstrate _modern_ software development practices than traditional Java as is used in the US AP Computer Science program. Just Go's handling of implied _interfaces_ alone is reason enough. Go contains all that is good from object-oriented programming without all that is <<ref-real-oop, bad from class-oriented programming>>.
+====
+
+== Why the Go language?
+
+The language we learn is **Go**. My artist wife is obsessed with traditional fables, which might explain why I like to call Go the _Goldilocks_ of modern languages. (Yes, I know, it's pretty cheesy—but you'll remember it, right?) Go was explicitly designed and developed to do real work, originally at Google and now for the world of "cloud-native" computing upon which all enterprise depends.
+
+The Goldilocks comparison comes from the fact that Go is low-level and "serious" enough to withstand the weight of huge enterprise software development codebases, while remaining light and agile enough to feel like a softly typed, "approachable" language such as Python. Go fills this space between them perfectly, which is probably why it is the fastest-growing language among Systems Development Engineers modernizing monstrous codebases of technical debt from other, less agile, and more error-prone languages.

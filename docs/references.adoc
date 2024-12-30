@@ -1,0 +1,9 @@
+* [[ref-real-oop]]Coplien, James. _The Dehumanisation of Agile and Objects._ Presented at GOTO Berlin 2017. YouTube video, 1:00:25. Published November 2017. link:https://youtu.be/ZrBQmIDdls4[https://youtu.be/ZrBQmIDdls4]
+* Freire, Paulo. _Pedagogy of the Oppressed_. Translated by Myra Bergman Ramos. 30th Anniversary Edition. Continuum, 2000.
+* [[ref-awesome-go]]Muhlestein, Rob. _Awesome Go_. GitHub repository. link:https://github.com/rwxrob/awesome-go[https://github.com/rwxrob/awesome-go]
+* [[ref-contact]]Muhlestein, Rob. _rwxrob_. Linktree. Accessed July 2024. link:https://linktr.ee/rwxrob[https://linktr.ee/rwxrob].
+* [[ref-terminal-velocity]]Muhlestein, Rob. _Terminal Velocity_. GitHub repository. Accessed July 2024. link:https://github.com/rwxrob/terminal-velocity[https://github.com/rwxrob/terminal-velocity].
+* Robinson, Ken, and Lou Aronica. _Creative Schools: The Grassroots Revolution That's Transforming Education_. Penguin Books, 2016.
+* Robinson, Ken. _Out of Our Minds: Learning to Be Creative_. 3rd ed., Capstone, 2017.
+* [[ref-yt-ken-ted]]Robinson, Ken. _Do Schools Kill Creativity?_ Filmed at TED February 2006, posted June 2006. YouTube video, 20:03. link:https://youtu.be/iG9CE55wbtY[https://youtu.be/iG9CE55wbtY]
+* [[ref-credit-hours]]Silva, Elena, Taylor White, and Thomas Toch. _The Carnegie Unit: A Century-Old Standard in a Changing Education Landscape_. Carnegie Foundation for the Advancement of Teaching, 2015. link:https://www.carnegiefoundation.org/wp-content/uploads/2015/01/Carnegie_Unit_Report.pdf[https://www.carnegiefoundation.org/wp-content/uploads/2015/01/Carnegie_Unit_Report.pdf].

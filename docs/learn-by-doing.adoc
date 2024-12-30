@@ -1,6 +1,11 @@
-== How to use this book
+== How do I use this book?
 
-Do these _mnemonic mini-projects_ in order to learn everything the Go programming language has to offer as well as the core concepts of computer science. Each project gradually adds new concepts and skills while repeating the stuff you have already done. This pyramid approach ensures you retain what you have learned by repetition rather than just moving on to the next thing.
+Join a learning community and/or find a mentor, then do these _mnemonic mini-projects_ in order to learn everything the Go programming language has to offer as well as the core concepts of computer science. Each project gradually adds new concepts and skills while repeating the stuff you have already done. This scaffold learning approach ensures you retain what you have learned by repetition rather than just moving on to the next thing.
+
+[CAUTION]
+====
+You really should not attempt to learn all of this on your own without support from someone who has already mastered these specific concepts and skills. It doesn't have to be a "teacher" per se. Anyone who has successfully completed them can serve as a mentor. This means you may find such people in a learning community focused on the same things. You are always welcome to join <<ref-contact, mine>> if you cannot find another.
+====
 
 === Associate name with concepts
 
@@ -17,11 +22,11 @@ If you use AsciiDoc to write it, you can even publish your own booklet for refer
 
 === Learn the [.line-through]#hard# right way
 
-The "hard way" is really the _only_ way to truly learn something in a sustainable way. It just means you try to do a thing and figure out how to learn to do that thing on your own. That way the next time you are required to do it you will know what to do to learn it yourself without any dependence on a book, teacher, guru, or app. This independence is _mandatory_ for any tech professional or knowledge worker today. AI just supplements this approach for those who approach learning the _right_ way. It's "hard" because you have to do your own research rather than just slurping it off the page.
+The "hard way" is really the _only_ way to truly learn something in a sustainable way. It just means you try to do a thing and figure out how to learn to do that thing on your own before depending on someone who knows. The scaffold approach means you have someone there to spot you and support you if you really screw up so you don't break your neck but by doing what you can on your own first—knowing your limitations without fearing them—leads you to greater confidence in your own ability to learn and assess your own learning without help. You grow to have no dependence on a book, teacher, guru, or app. Developing this autodidactic, just-in-time learning independence is _mandatory_ for any tech professional or knowledge worker today. AI just supplements this approach for those who approach learning the _right_ way. It's "hard" because you have to do your own research rather than just slurping it off the page.
 
 [CAUTION]
 ====
-Run screaming from "banker style education" where the teacher thinks you should be injected with learning by sitting their listening to them instead of asking questions and interactively coming up with solutions. Paulo Friere talks about this a lot in _Pedagogy of the Oppressed_.
+Run screaming from "banker style education" where the teacher thinks you should be injected with learning by sitting there listening to them instead of asking questions and interactively coming up with solutions. This concept aligns with Freire's critique of traditional education models, often referred to as the "banking" model of education. (Freire, _Pedagogy of the Oppressed_, p. 71).
 ====
 
 I've spent a lot of time separating the list of requirements and the associated tasks from the code and explanation of how to do it. This means you can read those first without spoiling the solution—if you want. For each project, consider following these steps:
@@ -30,9 +35,14 @@ I've spent a lot of time separating the list of requirements and the associated 
 
 When you first open a project, read the description and the list of requirements and think hard about what you would do without ever reading the rest. If you don't understand a term, look it up with your AI assistant or the Internet. Practice doing the research just as you would on the job.
 
+[TIP]
+====
+Copy and paste the requirements as-is into your own notes so you can check them off as you complete them. Just add an `x` between the square brackets. This is supported in both AsciiDoc and GitHub flavored Markdown and is a good habit to get into because these are regularly used in pull requests and other developer operations.
+====
+
 [IMPORTANT]
 ====
-It is _more_ important to be fast at looking things up—doing research—than it ever will be to memorize algorithms. Memorization is good to for sure, but fast research is at least as important. This is why I love moving at _Terminal Velocity_ because I can do it all from the terminal. I can find thing on the Internet in a fraction of the time that I could with a GUI browser and then open up a GUI browser if needed with one keystroke, no images, no cookies, no tracking, just lightning fast browsing and search history that is saved in my command line history as well.
+It is _more_ important to be fast at looking things up—doing research—than it ever will be to memorize algorithms. Memorization is good to for sure, but fast research is at least as important. This is why I love moving at <<ref-terminal-velocity, _Terminal Velocity_>> because I can do it all from the terminal. I can find thing on the Internet in a fraction of the time that I could with a GUI browser and then open up a GUI browser if needed with one keystroke, no images, no cookies, no tracking, just lightning fast browsing and search history that is saved in my command line history as well.
 ====
 
 ==== 2. Imagine a solution
@@ -81,5 +91,7 @@ Don't forget to write down what you learned in your notes in a way that is as if
 
 [TIP]
 ====
-Learning is dramatically different for every person. Sir Ken Robinson was knighted for his work regarding these distinct differences in learning style. Never become depressed because something was hard for you to learn while someone else learned it right away. While aptitude and intelligence are very real, so is the _method_ of learning that is hard-coded into your specific brain. Half the battle is figuring out how _you_ learn and developing learning strategies based on that.
+> The problem with _conformity_ in education is that people are not standardized to begin with. (Robinson, _Creative Schools_)
+
+Learning is dramatically different for every person. Sir Ken Robinson regularly shared these distinct differences in learning style. Never become depressed because something was hard for you to learn while someone else learned it right away. While aptitude and intelligence are very real, so is the _method_ of learning that is hard-coded into your specific brain. Half the battle is figuring out how _you_ learn and developing learning strategies based on that.
 ====

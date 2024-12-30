@@ -1,0 +1,5 @@
+== cpick
+
+Real-time, dynamic color selection from command line (based on the original project from link:https://github.com/ethanbaker/cpick[Ethan Baker]).
+
+Under development ...
