@@ -13,7 +13,7 @@
 :sectnums!:
 :sectlinks:
 :toc: left
-:toclevels: 2
+:toclevels: 3
 :toc-title: Table of Contents
 :description: Learn practical computer science and programming with Go as a first language.
 :keywords: golang computer-science compsci programming beginners
@@ -25,6 +25,7 @@
 
 _Learn practical computer science and programming with Go as a first language_
 
+
 [CAUTION]
 ====
 This content is under active development and based on original content from SKILSTAK Coding Arts developed in Python and JavaScript back in 2014. It will likely be several months before it is complete entirely. Many other great alternatives exist for learning computer science and Go programming if you prefer to wait. I make zero promises.
@@ -32,84 +33,127 @@ This content is under active development and based on original content from SKIL
 You can join me for link:https://linktr.ee/rwxrob[livestream sessions] if you don't mind a bit of informal exploration as we work through these projects together.
 ====
 
+[WARNING]
+====
+Anticipate about {hours} hours of "in-class" time and know that you will need another 150 on your own studying to master just these concepts and mini-projects. That's equivalent to a 5 credit hour course if crammed over 15 weeks.
+
+Remember that these mini-projects are just to introduce you to the many possibilities. You will still need at least the same amount of time on _actual_ projects after you have learned these before you will be ready to do any of this on your own professionally. Learning to code isn't easy, it's just worth it.
+====
 
 include::copyright.adoc[]
 
 = Preface
 
+[hours="1"]
+include::./learn-by-doing.adoc[]
+
+[hours="1"]
 include::./get-the-tools.adoc[]
 
 = Projects
 
-include::./learn-by-doing.adoc[]
-
+[hours="1"]
 include::../hello/README.adoc[]
 
+[hours="1"]
 include::../world/README.adoc[]
 
+[hours="1"]
 include::../bincount/README.adoc[]
 
+[hours="1"]
 include::../arrrgs/README.adoc[]
 
+[hours="1"]
 include::../greet/README.adoc[]
 
+[hours="1"]
 include::../color/README.adoc[]
 
+[hours="1"]
 include::../nyan/README.adoc[]
 
+[hours="1"]
 include::../waffles/README.adoc[]
 
+[hours="1"]
 include::../eightball/README.adoc[]
 
+[hours="2"]
 include::../diceroll/README.adoc[]
 
+[hours="3"]
 include::../lights/README.adoc[]
 
+[hours="1"]
 include::../pre/README.adoc[]
 
+[hours="2"]
 include::../toemoji/README.adoc[]
 
+[hours="1"]
 include::../bridge/README.adoc[]
 
+[hours="1"]
 include::../fizzbuzz/README.adoc[]
 
+[hours="1"]
 include::../fields/README.adoc[]
 
+[hours="1"]
 include::../simon/README.adoc[]
 
+[hours="1"]
 include::../quiz/README.adoc[]
 
+[hours="1"]
 include::../madforms/README.adoc[]
 
+[hours="2"]
 include::../vimtutor/README.adoc[]
 
+[hours="4"]
 include::../story/README.adoc[]
 
+[hours="2"]
 include::../pokeapi/README.adoc[]
 
+[hours="1"]
 include::../serve/README.adoc[]
 
+[hours="1"]
 include::../scrape/README.adoc[]
 
+[hours="2"]
 include::../wschatserve/README.adoc[]
 
+[hours="2"]
 include::../wschatclient/README.adoc[]
 
+[hours="4"]
 include::../calc/README.adoc[]
 
+[hours="3"]
 include::../colors/README.adoc[]
 
+[hours="2"]
 include::../coding/README.adoc[]
 
+[hours="2"]
 include::../resume/README.adoc[]
 
+[hours="4"]
 include::../xstatic/README.adoc[]
 
+[hours="1"]
 include::../completer/README.adoc[]
 
+[hours="1"]
 include::../persister/README.adoc[]
 
+[hours="6"]
 include::../kn/README.adoc[]
 
+[hours="8"]
 include::../mymark/README.adoc[]
 

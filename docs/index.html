@@ -496,7 +496,17 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_copyright">Copyright</a></li>
 <li><a href="#_preface">Preface</a>
 <ul class="sectlevel2">
-<li><a href="#_go_get_the_tools">Go get the tools</a></li>
+<li><a href="#_get_go">Get Go</a>
+<ul class="sectlevel3">
+<li><a href="#_install_a_go_development_environment">Install a Go development environment</a></li>
+<li><a href="#_install_the_go_compiler">Install the Go compiler</a></li>
+<li><a href="#_upgrade_to_latest_go_version">Upgrade to latest Go version</a></li>
+<li><a href="#_install_go_binary_tools_for_chosen_development_environment">Install Go binary tools for chosen development environment</a></li>
+<li><a href="#_create_a_github_account">Create a GitHub account.</a></li>
+<li><a href="#_install_git_and_gh">Install <code>git</code> and <code>gh</code>.</a></li>
+<li><a href="#_authenticate_to_github_from_the_command_line">Authenticate to GitHub from the command line</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#_projects">Projects</a>
@@ -564,6 +574,23 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 </tr>
 </table>
 </div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Anticipate about 70 hours of "in-class" time and know that you will need another 150 on your own studying to master just these concepts and mini-projects. That&#8217;s equivalent to a 5 credit hour course if crammed over 15 weeks.</p>
+</div>
+<div class="paragraph">
+<p>Remember that these mini-projects are just to introduce you to the many possibilities. You will still need at least the same amount of time on <em>actual</em> projects after you have learned these before you will be ready to do any of this on your own professionally. Learning to code isn&#8217;t easy, it&#8217;s just worth it.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -586,37 +613,92 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <div class="sect1">
 <h2 id="_preface"><a class="link" href="#_preface">Preface</a></h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Do these <em>mnemonic mini-projects</em> in order to learn everything the Go programming language has to offer as well as the core concepts of computer science. These challenges are designed to be memorable so that you associate concepts with whatever silly mnemonic devices were associated with the challenge. Each challenge is designed for you to research on your own and then solve and document in your own way. The idea is that <em>you</em> are writing your own codebook repo while you work through these summarizing the key concepts and code in your own way. You&#8217;ll remember everything a lot better this way and can continue to expand your own codebook as you add your own challenges and learning. If you use AsciiDoc to write it, you can even publish your own booklet for reference or create your own EPUB or PDF you can carry with you on your phone of tablet.</p>
+</div>
 <div class="sect2">
-<h3 id="_go_get_the_tools"><a class="link" href="#_go_get_the_tools">Go get the tools</a></h3>
+<h3 id="_get_go"><a class="link" href="#_get_go">Get Go</a></h3>
+<div class="paragraph">
+<p>I&#8217;ve noticed that coding in Go is something that people with all backgrounds enjoy. This is probably because Go can be compiled on anything for anything else there is zero limitation as to the computer you use for development. I regularly use Go programs I&#8217;ve written on macOS or Linux on my Windows machine as well.</p>
+</div>
+<div class="sect3">
+<h4 id="_install_a_go_development_environment"><a class="link" href="#_install_a_go_development_environment">Install a Go development environment</a></h4>
+<div class="paragraph">
+<p>The editor you use really doesn&#8217;t matter—for now. Some prefer a graphic user interface and others a terminal. They are all fine. The original Go development team used Vim for everything and that is my personal preference.</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p>Install an editor: Vim, Neovim, VS Code, Goland, Container</p>
+<p>Notepad - yes, you can code with Notepad if you want</p>
 </li>
 <li>
-<p>Install Go:</p>
+<p>Nano - ultra simple terminal editor, already installed</p>
 </li>
 <li>
-<p><code>brew install golang</code></p>
+<p>Vim - traditional and ubiquitous, already installed</p>
 </li>
 <li>
-<p><code>sudo apt get golang</code>, `</p>
+<p>Neovim - powerful but requires installation</p>
 </li>
 <li>
-<p><code>winget install --id golang.go</code></p>
+<p>Emacs - preferred terminal editor by some</p>
 </li>
 <li>
-<p>Upgrade to latest Go: <code>go get go</code></p>
+<p>VS Code - favorite light-weight graphic editor</p>
 </li>
 <li>
-<p>Install Go tools (<code>:GoInstallBinaries</code>, VS Code extension)</p>
+<p>Goland - professional proprietary graphic editor</p>
 </li>
-<li>
-<p>Get a GitHub account</p>
-</li>
-<li>
-<p>Get <code>git</code> and <code>gh</code>:</p>
-</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="_consider_a_container"><a class="link" href="#_consider_a_container">Consider a container</a></h5>
+<div class="paragraph">
+<p>If you know about containers this might be the fastest way to get going—especially if you use the official Go container image.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_install_the_go_compiler"><a class="link" href="#_install_the_go_compiler">Install the Go compiler</a></h4>
+<div class="paragraph">
+<p>Mac: <code>brew install golang</code><br>
+Linux: <code>sudo apt get golang</code><br>
+Windows: <code>winget install --id golang.go</code></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_upgrade_to_latest_go_version"><a class="link" href="#_upgrade_to_latest_go_version">Upgrade to latest Go version</a></h4>
+<div class="paragraph">
+<p><code>go get go</code></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_install_go_binary_tools_for_chosen_development_environment"><a class="link" href="#_install_go_binary_tools_for_chosen_development_environment">Install Go binary tools for chosen development environment</a></h4>
+<div class="paragraph">
+<p><code>:GoInstallBinaries</code>, VS Code extension</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_create_a_github_account"><a class="link" href="#_create_a_github_account">Create a GitHub account.</a></h4>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You must be 13 years old or older to use GitHub legally. Check with your instructor for alternatives. Or, just skip the <code>git</code> and <code>gh</code> stuff and just remember to copy your files wherever you want to back them up.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_install_git_and_gh"><a class="link" href="#_install_git_and_gh">Install <code>git</code> and <code>gh</code>.</a></h4>
+<div class="ulist">
+<ul>
 <li>
 <p><code>brew install git gh</code></p>
 </li>
@@ -626,28 +708,26 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li>
 <p><code>winget install --id git.git</code>, <code>winget install --id github.cli</code></p>
 </li>
-<li>
-<p>Authenticate to GitHub: <code>gh auth login</code></p>
-</li>
-<li>
-<p>Create GitHub repo:</p>
-</li>
-<li>
-<p><code>mkdir -p ~/Repos/github.com/youraccount</code></p>
-</li>
-<li>
-<p><code>cd ~/Repos/github.com/youraccount</code></p>
-</li>
-<li>
-<p><code>gh repo create learn-golang --private --clone</code></p>
-</li>
-<li>
-<p><code>git branch -m main</code></p>
-</li>
-<li>
-<p><code>git push -u origin main</code></p>
-</li>
 </ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_authenticate_to_github_from_the_command_line"><a class="link" href="#_authenticate_to_github_from_the_command_line">Authenticate to GitHub from the command line</a></h4>
+<div class="paragraph">
+<p><code>gh auth login</code></p>
+</div>
+<div class="paragraph">
+<p>Create a GitHub repo to contain your Go coding work and notes.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="sh"><span></span>mkdir<span class="tok-w"> </span>-p<span class="tok-w"> </span>~/Repos/github.com/youraccount
+<span class="tok-nb">cd</span><span class="tok-w"> </span>~/Repos/github.com/youraccount
+gh<span class="tok-w"> </span>repo<span class="tok-w"> </span>create<span class="tok-w"> </span>learn-golang<span class="tok-w"> </span>--private<span class="tok-w"> </span>--clone
+git<span class="tok-w"> </span>branch<span class="tok-w"> </span>-m<span class="tok-w"> </span>main
+git<span class="tok-w"> </span>push<span class="tok-w"> </span>-u<span class="tok-w"> </span>origin<span class="tok-w"> </span>main</code></pre>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -655,9 +735,6 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <div class="sect1">
 <h2 id="_projects"><a class="link" href="#_projects">Projects</a></h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Do these <em>mnemonic mini-projects</em> in order to learn everything the Go programming language has to offer as well as the core concepts of computer science. These challenges are designed to be memorable so that you associate concepts with whatever silly mnemonic devices were associated with the challenge. Each challenge is designed for you to research on your own and then solve and document in your own way. The idea is that <em>you</em> are writing your own codebook repo while you work through these summarizing the key concepts and code in your own way. You&#8217;ll remember everything a lot better this way and can continue to expand your own codebook as you add your own challenges and learning. If you use AsciiDoc to write it, you can even publish your own booklet for reference or create your own EPUB or PDF you can carry with you on your phone of tablet.</p>
-</div>
 <div class="sect2">
 <h3 id="_hello"><a class="link" href="#_hello">hello</a></h3>
 <div class="ulist">
@@ -1018,7 +1095,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <div id="footer">
 <div id="footer-text">
 Version v0.0.1<br>
-Last updated 2024-12-29 20:26:54 -0500
+Last updated 2024-12-29 21:34:00 -0500
 </div>
 </div>
 </body>

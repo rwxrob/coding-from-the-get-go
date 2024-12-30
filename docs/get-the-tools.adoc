@@ -1,22 +1,62 @@
-== Go get the tools
+== Get Go
 
-- Install an editor: Vim, Neovim, VS Code, Goland, Container
-- Install Go:
-  - `brew install golang`
-  - `sudo apt get golang`, `
-  - `winget install --id golang.go`
-- Upgrade to latest Go: `go get go`
-- Install Go tools (`:GoInstallBinaries`, VS Code extension)
-- Get a GitHub account
-- Get `git` and `gh`:
-  - `brew install git gh`
-  - `sudo apt install git gh`
-  - `winget install --id git.git`, `winget install --id github.cli`
-- Authenticate to GitHub: `gh auth login`
-- Create GitHub repo:
-  - `mkdir -p ~/Repos/github.com/youraccount`
-  - `cd ~/Repos/github.com/youraccount`
-  - `gh repo create learn-golang --private --clone`
-  - `git branch -m main`
-  - `git push -u origin main`
+I've noticed that coding in Go is something that people with all backgrounds enjoy. This is probably because Go can be compiled on anything for anything else there is zero limitation as to the computer you use for development. I regularly use Go programs I've written on macOS or Linux on my Windows machine as well.
+
+=== Install a Go development environment
+
+The editor you use really doesn't matter—for now. Some prefer a graphic user interface and others a terminal. They are all fine. The original Go development team used Vim for everything and that is my personal preference.
+
+- Notepad - yes, you can code with Notepad if you want
+- Nano - ultra simple terminal editor, already installed
+- Vim - traditional and ubiquitous, already installed
+- Neovim - powerful but requires installation
+- Emacs - preferred terminal editor by some
+- VS Code - favorite light-weight graphic editor
+- Goland - professional proprietary graphic editor
+
+==== Consider a container
+
+If you know about containers this might be the fastest way to get going—especially if you use the official Go container image.
+
+=== Install the Go compiler
+
+Mac: `brew install golang` +
+Linux: `sudo apt get golang` +
+Windows: `winget install --id golang.go`
+
+=== Upgrade to latest Go version
+
+`go get go`
+
+=== Install Go binary tools for chosen development environment
+
+`:GoInstallBinaries`, VS Code extension
+
+=== Create a GitHub account
+
+[CAUTION]
+====
+You must be 13 years old or older to use GitHub legally. Check with your instructor for alternatives. Or, just skip the `git` and `gh` stuff and just remember to copy your files wherever you want to back them up.
+====
+
+=== Install git and gh
+
+- `brew install git gh`
+- `sudo apt install git gh`
+- `winget install --id git.git`, `winget install --id github.cli`
+
+=== Authenticate to GitHub from the command line
+
+`gh auth login`
+
+Create a GitHub repo to contain your Go coding work and notes.
+
+[source,sh]
+----
+mkdir -p ~/Repos/github.com/youraccount
+cd ~/Repos/github.com/youraccount
+gh repo create learn-golang --private --clone
+git branch -m main
+git push -u origin main
+----
 
