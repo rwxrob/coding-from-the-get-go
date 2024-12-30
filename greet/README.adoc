@@ -1,0 +1,15 @@
+== greet
+:tags: variable, constant, type, primitive, slice, array, map, struct, scope, var, assignment, walrus-operator, block, subroutine, procedure, func, null, nil, identifier, blank-identifier fmt.Sprintf, function, scope, caller, paradigm, operator, operand, go-test, TDD, test-driven-development, _test.go, example-based-tests
+
+_In development..._
+
+- Block - anything within curly brackets
+- Subroutine - any collection of steps or instructions within a block
+- Procedure - specifically a collection of instructions in a subroutine
+- Function - internal calculation with a specific output return value (like math)
+- Scope - how visible a thing is to other things
+- Caller - the thing that called the other thing
+- Paradigm - how to look at the world
+- Operator - performs some action on one or more operands
+- Operand - involved in the the action of an operator
+
