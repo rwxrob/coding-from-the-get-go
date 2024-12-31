@@ -54,9 +54,33 @@ include::./get-the-tools.adoc[]
 
 = Projects you'll remember
 
+[CAUTION]
+====
+Before you continue, make sure you have read the <<_learn_the_hard_right_way, _Learn the hard way_>> description of how to proceed.
+====
+
+This part of the book contains nothing but projects that build on one another to help you master everything you can do with Go and Go's most substantial standard libraries—in a fun way so you remember it better. Each project is separated into different parts allowing you to hold back on more help than you might need:
+
+
+[cols="^.^1,2",options="header,autowidth"]
+|===
+| Section | Purpose
+| Introduction | The intro has no heading. It's just a fun introduction to the activity with some things that will hopefully help you remember it better. Remember, the sillier the more memorable.
+| Requirements | This section contains a checklist that you can cut and paste into your own notes if you are reading this in digital form. It is designed to read like something you might receive from a customer or see on a job description. This should make searching for them easier later on—especially if you add them to your own code repo or knowledge base.
+| Bonus | Contains further requirements that are above and beyond what is expected in this project. In a group setting, this gives people more to do who finish early. It also gives you more to attempt when you delete it and try again.
+| Sample | The sample solution has this title because it is not the _only_ solution. There are almost always variations that will work. This is one reason that automating the checks of such work is a completely futile use of time. You are your own best assessor when given the tools and contacts to do so.
+| Ideas | This is a list of random ideas for things you might want to create on your own that have more demonstrable value in a GitHub portfolio, for example. Your creation of the code for the idea is 100% original and owned by you so you can use it to build trust with potential employers or project leaders.
+| Tags | Contains tags and keywords related to this project. This is useful when looking for all projects that might relate to the same content or task.
+|===
+
+
+
+[NOTE]
+====
 Sometimes I get the sense that some people reading this part of the book regret that it isn't a recipe book of exact applications they would create on the job. I do love those sorts of books, but all of them are completely obsolete now that AI is here to stay. Any tech professional or knowledge worker _without_ an AI assistant at this point is practically guilty of malfeasance.
 
 No, this book _deliberately_ creates silly, memorable learning activities so that they stick better in your brain and are repeatable. Most of them can easily provide the building blocks to "serious" applications that you and/or your AI could create to show off your skills. But keep this in mind: **_employers no longer trust GitHub repos as much as before as an indication of skill_**. This was true at one point, but no more. AI has permanently destroyed that assumption.
+====
 
 [hours="1"]
 include::../hello/README.adoc[]

@@ -1,4 +1,6 @@
+---
 == ansi
+:tags: color, ANSI, escapes
 
 Under development ...
 
@@ -33,3 +35,13 @@ Under development ...
 === Sample
 
 _In development..._
+
+[discrete]
+=== Ideas
+
+_In development..._
+
+[discrete]
+=== Tags
+
+`{tags}`

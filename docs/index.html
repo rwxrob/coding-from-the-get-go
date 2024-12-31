@@ -487,7 +487,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <span id="author" class="author">Robert S. Muhlestein (rwxrob)</span><br>
 <span id="email" class="email"><a href="mailto:rob@rwx.gg">rob@rwx.gg</a></span><br>
 <span id="revnumber">version v0.0.1,</span>
-<span id="revdate">2024-12-30 18:46:46</span>
+<span id="revdate">2024-12-30 19:45:20</span>
 <br><span id="revremark">Under development</span>
 </div>
 <div id="toc" class="toc2">
@@ -1090,14 +1090,82 @@ git<span class="tok-w"> </span>push<span class="tok-w"> </span>-u<span class="to
 <div class="sect1">
 <h2 id="_projects_youll_remember"><a class="link" href="#_projects_youll_remember">Projects you&#8217;ll remember</a></h2>
 <div class="sectionbody">
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Before you continue, make sure you have read the <a href="#_learn_the_hard_right_way"><em>Learn the hard way</em></a> description of how to proceed.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>This part of the book contains nothing but projects that build on one another to help you master everything you can do with Go and Go&#8217;s most substantial standard libraries—in a fun way so you remember it better. Each project is separated into different parts allowing you to hold back on more help than you might need:</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-middle">Section</th>
+<th class="tableblock halign-left valign-top">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">Introduction</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The intro has no heading. It&#8217;s just a fun introduction to the activity with some things that will hopefully help you remember it better. Remember, the sillier the more memorable.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">Requirements</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This section contains a checklist that you can cut and paste into your own notes if you are reading this in digital form. It is designed to read like something you might receive from a customer or see on a job description. This should make searching for them easier later on—especially if you add them to your own code repo or knowledge base.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">Bonus</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contains further requirements that are above and beyond what is expected in this project. In a group setting, this gives people more to do who finish early. It also gives you more to attempt when you delete it and try again.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">Sample</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The sample solution has this title because it is not the <em>only</em> solution. There are almost always variations that will work. This is one reason that automating the checks of such work is a completely futile use of time. You are your own best assessor when given the tools and contacts to do so.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">Ideas</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This is a list of random ideas for things you might want to create on your own that have more demonstrable value in a GitHub portfolio, for example. Your creation of the code for the idea is 100% original and owned by you so you can use it to build trust with potential employers or project leaders.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">Tags</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contains tags and keywords related to this project. This is useful when looking for all projects that might relate to the same content or task.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
 <div class="paragraph">
 <p>Sometimes I get the sense that some people reading this part of the book regret that it isn&#8217;t a recipe book of exact applications they would create on the job. I do love those sorts of books, but all of them are completely obsolete now that AI is here to stay. Any tech professional or knowledge worker <em>without</em> an AI assistant at this point is practically guilty of malfeasance.</p>
 </div>
 <div class="paragraph">
 <p>No, this book <em>deliberately</em> creates silly, memorable learning activities so that they stick better in your brain and are repeatable. Most of them can easily provide the building blocks to "serious" applications that you and/or your AI could create to show off your skills. But keep this in mind: <strong><em>employers no longer trust GitHub repos as much as before as an indication of skill</em></strong>. This was true at one point, but no more. AI has permanently destroyed that assumption.</p>
 </div>
+</td>
+</tr>
+</table>
+</div>
 <div class="sect2">
 <h3 id="_hello"><a class="link" href="#_hello">hello</a></h3>
+<h4 id="_requirements" class="discrete">Requirements</h4>
+<h4 id="_sample" class="discrete">Sample</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1272,13 +1340,14 @@ git<span class="tok-w"> </span>push<span class="tok-w"> </span>-u<span class="to
 </li>
 </ul>
 </div>
+<hr>
 </div>
 <div class="sect2">
 <h3 id="_ansi"><a class="link" href="#_ansi">ansi</a></h3>
 <div class="paragraph">
 <p>Under development &#8230;&#8203;</p>
 </div>
-<h4 id="_requirements" class="discrete">Requirements</h4>
+<h4 id="_requirements_2" class="discrete">Requirements</h4>
 <div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="adoc"><span></span>- [ ] Create high-level function library: `ansi`
@@ -1301,9 +1370,17 @@ git<span class="tok-w"> </span>push<span class="tok-w"> </span>-u<span class="to
 - [ ] Add custom completer that uses CSS completer</code></pre>
 </div>
 </div>
-<h4 id="_sample" class="discrete">Sample</h4>
+<h4 id="_sample_2" class="discrete">Sample</h4>
 <div class="paragraph">
 <p><em>In development&#8230;&#8203;</em></p>
+</div>
+<h4 id="_ideas" class="discrete">Ideas</h4>
+<div class="paragraph">
+<p><em>In development&#8230;&#8203;</em></p>
+</div>
+<h4 id="_tags" class="discrete">Tags</h4>
+<div class="paragraph">
+<p><code>color, ANSI, escapes</code></p>
 </div>
 </div>
 <div class="sect2">
@@ -1566,7 +1643,7 @@ git<span class="tok-w"> </span>push<span class="tok-w"> </span>-u<span class="to
 <div id="footer">
 <div id="footer-text">
 Version v0.0.1<br>
-Last updated 2024-12-30 18:46:44 -0500
+Last updated 2024-12-30 19:35:35 -0500
 </div>
 </div>
 </body>
