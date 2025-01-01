@@ -487,7 +487,7 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <span id="author" class="author">Robert S. Muhlestein (rwxrob)</span><br>
 <span id="email" class="email"><a href="mailto:rob@rwx.gg">rob@rwx.gg</a></span><br>
 <span id="revnumber">version v0.0.1,</span>
-<span id="revdate">2024-12-30 19:45:20</span>
+<span id="revdate">2025-01-01 13:19:30</span>
 <br><span id="revremark">Under development</span>
 </div>
 <div id="toc" class="toc2">
@@ -553,6 +553,11 @@ pre.pygments .tok-ss { color: #a31515 } /* Literal.String.Symbol */
 <li><a href="#_persister">persister</a></li>
 <li><a href="#_kn">kn</a></li>
 <li><a href="#_mymark">mymark</a></li>
+</ul>
+</li>
+<li><a href="#_gotchas">Gotchas</a>
+<ul class="sectlevel2">
+<li><a href="#_input_string_argument_comes_last">Input string argument comes last</a></li>
 </ul>
 </li>
 <li><a href="#_planning_whats_next">Planning what&#8217;s next</a>
@@ -1566,6 +1571,109 @@ git<span class="tok-w"> </span>push<span class="tok-w"> </span>-u<span class="to
 </div>
 </div>
 <div class="sect1">
+<h2 id="_gotchas"><a class="link" href="#_gotchas">Gotchas</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This part of the book contains all the many ways I&#8217;ve been burned over more than a decade of Go programming as a SysDE and how to avoid being burned yourself.</p>
+</div>
+<div class="sect2">
+<h3 id="_input_string_argument_comes_last"><a class="link" href="#_input_string_argument_comes_last">Input string argument comes last</a></h3>
+<div class="paragraph">
+<p>Go&#8217;s <code>text/template</code> package is Rob Pike&#8217;s pet package (he has a great video talking about it) and it shows. It is the single most powerful, extensible template framework I&#8217;ve ever seen. No wonder it is the basis of every Helm chart, Hugo, and so much more but here is a big gotcha that you might not know about when coding normal everyday string transformation utility functions. Don&#8217;t be me, do these right from the beginning.</p>
+</div>
+<div class="sect3">
+<h4 id="_problem"><a class="link" href="#_problem">Problem</a></h4>
+<div class="paragraph">
+<p>You might think that the following is absolutely fine. I certainly did:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="golang"><span></span><span class="tok-kn">package</span><span class="tok-w"> </span><span class="tok-nx">to</span>
+
+<span class="tok-kn">import</span><span class="tok-w"> </span><span class="tok-p">(</span>
+<span class="tok-w">	</span><span class="tok-s">&quot;fmt&quot;</span>
+<span class="tok-w">	</span><span class="tok-s">&quot;strings&quot;</span>
+<span class="tok-p">)</span>
+
+<span class="tok-c1">// WRONG! DO NOT DO THIS. This unnecessarily prevents a perfectly good</span>
+<span class="tok-c1">// function from being used within text/template pipelines.</span>
+<span class="tok-kd">func</span><span class="tok-w"> </span><span class="tok-nx">Indented</span><span class="tok-p">(</span><span class="tok-nx">in</span><span class="tok-w"> </span><span class="tok-kt">string</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-nx">indent</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-kt">string</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">	</span><span class="tok-kd">var</span><span class="tok-w"> </span><span class="tok-nx">buf</span><span class="tok-w"> </span><span class="tok-kt">string</span>
+<span class="tok-w">	</span><span class="tok-k">for</span><span class="tok-w"> </span><span class="tok-nx">_</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-nx">line</span><span class="tok-w"> </span><span class="tok-o">:=</span><span class="tok-w"> </span><span class="tok-k">range</span><span class="tok-w"> </span><span class="tok-nx">Lines</span><span class="tok-p">(</span><span class="tok-nx">in</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">		</span><span class="tok-nx">buf</span><span class="tok-w"> </span><span class="tok-o">+=</span><span class="tok-w"> </span><span class="tok-nx">fmt</span><span class="tok-p">.</span><span class="tok-nx">Sprintln</span><span class="tok-p">(</span><span class="tok-nx">strings</span><span class="tok-p">.</span><span class="tok-nx">Repeat</span><span class="tok-p">(</span><span class="tok-s">&quot; &quot;</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-nx">indent</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-nx">line</span><span class="tok-p">)</span>
+<span class="tok-w">	</span><span class="tok-p">}</span>
+<span class="tok-w">	</span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-nx">buf</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The problem is subtle, but important. As the comment points out, the order of the arguments unnecessarily prevents this function from being used in <code>text/template</code> pipelines because the string is passed as the first argument and not the last.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>A pipeline may be "chained" by separating a sequence of commands with pipeline characters '|'. In a chained pipeline, the result of each command is passed as the last argument of the following command. The output of the final command in the pipeline is the value of the pipeline.</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_solution"><a class="link" href="#_solution">Solution</a></h4>
+<div class="paragraph">
+<p>Here&#8217;s the better way along with a comment explaining it for the next poor soul who might not know:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="golang"><span></span><span class="tok-kn">package</span><span class="tok-w"> </span><span class="tok-nx">to</span>
+
+<span class="tok-kn">import</span><span class="tok-w"> </span><span class="tok-p">(</span>
+<span class="tok-w">	</span><span class="tok-s">&quot;fmt&quot;</span>
+<span class="tok-w">	</span><span class="tok-s">&quot;strings&quot;</span>
+<span class="tok-p">)</span>
+
+<span class="tok-c1">// Indented returns a string with each line indented by the specified</span>
+<span class="tok-c1">// number of spaces. Carriage returns are stripped (if found) as</span>
+<span class="tok-c1">// a side-effect. Per [pkg/text/template] rules, the string input</span>
+<span class="tok-c1">// argument is last so that this function can be used as-is within</span>
+<span class="tok-c1">// template pipe constructs:</span>
+<span class="tok-c1">//</span>
+<span class="tok-c1">//	{{ .Some | indent 4 }}</span>
+<span class="tok-kd">func</span><span class="tok-w"> </span><span class="tok-nx">Indented</span><span class="tok-p">(</span><span class="tok-nx">indent</span><span class="tok-w"> </span><span class="tok-kt">int</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-nx">in</span><span class="tok-w"> </span><span class="tok-kt">string</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-kt">string</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">	</span><span class="tok-kd">var</span><span class="tok-w"> </span><span class="tok-nx">buf</span><span class="tok-w"> </span><span class="tok-kt">string</span>
+<span class="tok-w">	</span><span class="tok-k">for</span><span class="tok-w"> </span><span class="tok-nx">_</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-nx">line</span><span class="tok-w"> </span><span class="tok-o">:=</span><span class="tok-w"> </span><span class="tok-k">range</span><span class="tok-w"> </span><span class="tok-nx">Lines</span><span class="tok-p">(</span><span class="tok-nx">in</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-p">{</span>
+<span class="tok-w">		</span><span class="tok-nx">buf</span><span class="tok-w"> </span><span class="tok-o">+=</span><span class="tok-w"> </span><span class="tok-nx">fmt</span><span class="tok-p">.</span><span class="tok-nx">Sprintln</span><span class="tok-p">(</span><span class="tok-nx">strings</span><span class="tok-p">.</span><span class="tok-nx">Repeat</span><span class="tok-p">(</span><span class="tok-s">&quot; &quot;</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-nx">indent</span><span class="tok-p">)</span><span class="tok-w"> </span><span class="tok-o">+</span><span class="tok-w"> </span><span class="tok-nx">line</span><span class="tok-p">)</span>
+<span class="tok-w">	</span><span class="tok-p">}</span>
+<span class="tok-w">	</span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-nx">buf</span>
+<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_string_is_best_last_anyway"><a class="link" href="#_string_is_best_last_anyway">String is best last anyway</a></h4>
+<div class="paragraph">
+<p>By making the string value always last as a general rule you also allow for much clearer testing because the value arguments are not obfuscated behind a long, inline string of text:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="golang"><span></span><span class="tok-nx">it</span><span class="tok-w"> </span><span class="tok-o">:=</span><span class="tok-w"> </span><span class="tok-nx">to</span><span class="tok-p">.</span><span class="tok-nx">Indented</span><span class="tok-p">(</span><span class="tok-mi">4</span><span class="tok-p">,</span><span class="tok-s">`</span>
+<span class="tok-s">line one</span>
+<span class="tok-s">line two</span>
+<span class="tok-s">line three</span>
+<span class="tok-s">`</span><span class="tok-p">)</span>
+<span class="tok-nx">fmt</span><span class="tok-p">.</span><span class="tok-nx">Print</span><span class="tok-p">(</span><span class="tok-nx">it</span><span class="tok-p">)</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_moment"><a class="link" href="#_moment">Moment</a></h4>
+<div class="paragraph">
+<p>Even though I knew about <code>text/template</code> when I wrote my <code>github.com/rwxrob/bonzai/to</code> package I did not really intend for it to be used in a template—until I did. While creating my templates for Bonzai command help I went to do an indentation so that I didn&#8217;t have to force it on everyone. That&#8217;s the first time I really focused on pipelines. Even though I had read about the very obscure rule about passing the string last, I forgot and had to choose to make a bunch of template <code>FuncMap</code> commands that corrected the argument order or deprecate my entire <code>to</code> package and fix them all. You can probably guess which one I did.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_planning_whats_next"><a class="link" href="#_planning_whats_next">Planning what&#8217;s next</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -1643,7 +1751,7 @@ git<span class="tok-w"> </span>push<span class="tok-w"> </span>-u<span class="to
 <div id="footer">
 <div id="footer-text">
 Version v0.0.1<br>
-Last updated 2024-12-30 19:35:35 -0500
+Last updated 2025-01-01 13:18:57 -0500
 </div>
 </div>
 </body>

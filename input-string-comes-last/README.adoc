@@ -1,0 +1,43 @@
+== Input string argument comes last
+
+Go's `text/template` package is Rob Pike's pet package (he has a great video talking about it) and it shows. It is the single most powerful, extensible template framework I've ever seen. No wonder it is the basis of every Helm chart, Hugo, and so much more but here is a big gotcha that you might not know about when coding normal everyday string transformation utility functions. Don't be me, do these right from the beginning.
+
+=== Problem
+
+You might think that the following is absolutely fine. I certainly did:
+
+[source,golang]
+----
+include::wrong.go[]
+----
+
+The problem is subtle, but important. As the comment points out, the order of the arguments unnecessarily prevents this function from being used in `text/template` pipelines because the string is passed as the first argument and not the last.
+
+> A pipeline may be "chained" by separating a sequence of commands with pipeline characters '|'. In a chained pipeline, the result of each command is passed as the last argument of the following command. The output of the final command in the pipeline is the value of the pipeline.
+
+=== Solution
+
+Here's the better way along with a comment explaining it for the next poor soul who might not know:
+
+[source,golang]
+----
+include::right.go[]
+----
+
+=== String is best last anyway
+
+By making the string value always last as a general rule you also allow for much clearer testing because the value arguments are not obfuscated behind a long, inline string of text:
+
+[source,golang]
+----
+it := to.Indented(4,`
+line one
+line two
+line three
+`)
+fmt.Print(it)
+----
+
+=== Moment
+
+Even though I knew about `text/template` when I wrote my `github.com/rwxrob/bonzai/to` package I did not really intend for it to be used in a template—until I did. While creating my templates for Bonzai command help I went to do an indentation so that I didn't have to force it on everyone. That's the first time I really focused on pipelines. Even though I had read about the very obscure rule about passing the string last, I forgot and had to choose to make a bunch of template `FuncMap` commands that corrected the argument order or deprecate my entire `to` package and fix them all. You can probably guess which one I did.
