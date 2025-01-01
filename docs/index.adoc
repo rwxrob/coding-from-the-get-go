@@ -187,16 +187,16 @@ include::../kn/README.adoc[]
 [hours="8"]
 include::../mymark/README.adoc[]
 
+= Planning what's next
+
+[hours="1"]
+include::./planning.adoc[]
+
 = Gotchas
 
 This part of the book contains all the many ways I've been burned over more than a decade of Go programming as a SysDE and how to avoid being burned yourself.
 
 include::../input-string-comes-last/README.adoc[]
-
-= Planning what's next
-
-[hours="1"]
-include::./planning.adoc[]
 
 = References
 
