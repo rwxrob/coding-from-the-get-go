@@ -25,6 +25,12 @@
 
 _Learn practical computer science and programming with Go as a first language_
 
+[cols="^.^1,1,1",options="autowidth"]
+|===
+| https://linktr.ee/rwxrob | link:./rwxrob-terminal-coding-from-the-get-go.pdf[Download PDF] | link:./rwxrob-coding-from-the-get-go.epub[Download EPUB]
+|===
+
+
 [CAUTION]
 ====
 This content is under active development and based on original content from SKILSTAK Coding Arts developed in Python and JavaScript back in 2014. It will likely be several months before it is complete entirely. Many other great alternatives exist for learning computer science and Go programming if you prefer to wait. I make zero promises.
@@ -151,9 +157,6 @@ include::../pokeapi/README.adoc[]
 [hours="1"]
 include::../serve/README.adoc[]
 
-[hours="1"]
-include::../scrape/README.adoc[]
-
 [hours="2"]
 include::../wschatserve/README.adoc[]
 
@@ -163,29 +166,17 @@ include::../wschatclient/README.adoc[]
 [hours="4"]
 include::../calc/README.adoc[]
 
-[hours="4"]
-include::../cpick/README.adoc[]
-
-[hours="2"]
-include::../coding/README.adoc[]
-
 [hours="2"]
 include::../resume/README.adoc[]
 
-[hours="4"]
-include::../xstatic/README.adoc[]
+[hours="8"]
+include::../clip/README.adoc[]
 
 [hours="1"]
 include::../completer/README.adoc[]
 
 [hours="1"]
 include::../persister/README.adoc[]
-
-[hours="6"]
-include::../kn/README.adoc[]
-
-[hours="8"]
-include::../mymark/README.adoc[]
 
 = Planning what's next
 
