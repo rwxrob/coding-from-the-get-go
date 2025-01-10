@@ -189,6 +189,8 @@ This part of the book contains all the many ways I've been burned over more than
 
 include::../input-string-comes-last/README.adoc[]
 
+// include::../implement-encoding.textmarshaler-not-fmt-stringer/README.adoc[]
+
 = References
 
 include::./references.adoc[]
